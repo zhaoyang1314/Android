@@ -1,0 +1,95 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout 
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="UnusedNamespace" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        <com.profitles.framwork.cusviews.view.MyRelativeLayout
+            android:id="@+id/rltMainBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.4"
+            style="@style/lltMainBody">
+  
+            <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent">
+
+	            <LinearLayout
+	                    android:id="@+id/llt_pklist"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical"
+	                    android:padding="5dp" >
+	                  <com.profitles.framwork.cusviews.view.MyDataGrid
+			 		       android:id="@+id/mdtg_woinfolist"
+			 		       android:layout_width="match_parent"
+			 		       android:layout_height="match_parent"		    
+						   matt:attColKeys="XSWO_REL_DATE,XSWO_SHIFT,XSWO_NBR,XSWO_UKEY,OP_NM,XSWO_PART,XSWO_REV,XSWO_PART_NM,XSWO_QTY_ORD,XSWO_QTY_COMP"
+			 		       matt:attColNames="计划时间,班次,加工单,加工单ID,工序,物料号,版本号,物料描述,计划数量,完工数量"
+			 		       matt:attColWidths="260,120,320,300,180,200,100,1200,150,150"
+			 		       matt:isShowSeq="true" 
+			 		       android:isScrollContainer="true" >
+	   	    		  </com.profitles.framwork.cusviews.view.MyDataGrid>  
+	            </LinearLayout>
+	            
+	      	</FrameLayout>	
+        </com.profitles.framwork.cusviews.view.MyRelativeLayout>
+        
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:paddingBottom="2dp" >
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+	    <com.profitles.framwork.cusviews.view.MyLinearLayout
+	            android:id="@+id/lltMainToolBtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right|center_vertical"
+	            style="@style/lltToolCss"
+	            android:orientation="horizontal">
+		             
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/buttonBegin"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnBegin"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/buttonEnd"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnEnd"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/buttonNext"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnNext"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss" />
+		</com.profitles.framwork.cusviews.view.MyLinearLayout>
+		
+	</com.profitles.framwork.cusviews.view.MyLinearLayout> 
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>   

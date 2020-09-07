@@ -1,0 +1,87 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout 
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    tools:context="com.org.profitles.LoginActivity" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="test"/>
+					
+                    <com.profitles.framwork.cusviews.view.MyReadBQ 
+	                    android:id="@+id/etx_Tese"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+               		</com.profitles.framwork.cusviews.view.MyReadBQ>
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+                
+               <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="test2"/>
+                     <com.profitles.framwork.cusviews.view.MyReadBQ 
+	                     android:id="@+id/etx_Tese2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+               		</com.profitles.framwork.cusviews.view.MyReadBQ>
+               	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+               	
+				  <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="tese3" />
+                     <com.profitles.framwork.cusviews.view.MyReadBQ 
+	                     android:id="@+id/etx_Tese3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+               		</com.profitles.framwork.cusviews.view.MyReadBQ>
+               		
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+       
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

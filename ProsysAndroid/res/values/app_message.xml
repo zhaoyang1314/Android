@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="loginErrorMsg">登陆失败，用户不存在或密码错误！</string>
+    <string name="loginLocErrorMsg">登陆失败，库区在库位维护中不存在！</string>
+    <string name="login_TxtLblUid">请输入帐号</string>
+    <string name="login_TxtLblPwd">请输入密码</string>
+    <string name="login_TxtLblDomain">请选择域</string>
+    <string name="login_TxtLblLocQ">请选择库区</string>
+    <string name="login_TxtLblNewPwd">请输入密码</string>
+    <string name="login_TxtLblNewPwd2">请再次输入密码</string>
+    <string name="login_TxtLblSerUrl">请输入登录服务器地址</string>
+    <string name="login_TxtLblLogSer">请输入登录服务器地址</string>
+    <string name="login_TxtLblAbout">关于</string>
+    <string name="login_TxtLblVersion">版本：V20171127.1</string>
+    <string name="login_TxtLblCopy">版权所有：上海博惠特企业信息服务有限公司</string>
+    <string name="login_LoginIdReq">登录帐号不得为空！</string>
+    <string name="login_PwdReq">登录密码不得为空！</string>
+    <string name="login_DominReq">域不得为空！</string>
+    <string name="login_lblLogin">登 录</string>
+    <string name="login_lblMore">高级设置>></string>
+    <string name="login_LocReq">库区不得为空！</string>
+    <string name="login_DomainReq">域不得为空！</string>
+    <string name="login_DateChoose">业务日期</string>
+ 
+    <string name="submit_Pass">PASS</string>
+    <string name="rolk_NG">NG</string>
+    
+    <string name="menuNoChild">当前已无子菜单！</string>
+    <string name="doubleClickExit">再次点击退出！</string>
+    <string name="submit_ok">提交成功</string>
+    <string name="search_ok">search_ok成功</string>
+    <string name="print_ok">print_ok成功</string>
+    <string name="help_ok">help_ok成功</string>
+    <string name="Cnrc_help">  收货帮助:
+        							 1.有送货单请扫描单号,可空。
+        							 2.请扫码条码。
+        							 3.输入箱号。
+    </string> 
+    
+    <string name="pk_getfalse">处理失败</string>
+    <string name="cnrc_Scat_false">散量不能大于每箱量！</string>
+    <string name="cnrc_consQty_false">收货数量不能大于送货数量！</string>
+    <string name="cnrc_consSave_false">条码,供方,零件,箱数,每箱,总量,仓储不能为空!</string>
+    <string name="Porc_consSave_false">供方,零件,仓储,批号不能为空!</string>
+    <string name="qc_nbrs_false">没有检验单数据</string>
+    <string name="qc_iqQty_false">实检数量不能够大于检验量</string>
+    <string name="qc_part_false">没有获取到零件编号</string>
+    <string name="qc_um_false">没有获取到单位信息</string>
+    <string name="qc_partdesc_false">没有获取到零件详细信息</string>
+    <string name="qc_rcvdQTY_false">没有获取到检验数</string>
+    <string name="qc_boxQTY_false">没有获取到每箱量</string>
+    <string name="qc_lot_false">没有获取到批次</string>
+    
+    <string name="pk_save_false">数量不能为空!</string>
+    <string name="pk_save2_false">已拣数量不能大于等于需求量加单箱量减1</string>
+    <string name="pk_save_Qty_false">分拣数量不能大于库存量</string>
+  	<string name="pk_save_QtyBox_false">分拣数量不能大于每箱量</string>
+  	<string name="pk_sub_false">单号不能为空！</string>
+  	<string name="pk_save_bar_false">条码不能为空！</string>
+  	<string name="pk_save_cmbar_false">客签不能为空！</string>
+  	<string name="qcrtn_qty_false">数量不能大于检验数</string>
+  	<string name="qcrtn_qtySub_false">该分拣单没有数据!</string>
+  	<string name="xBox_saveCfs_false">拆分数不能为空！</string>
+  	<string name="xBox_saveCode_false">条码不能为空！</string>
+  	<string name="xBox_save_false">拆分数不能大于每箱数！</string>
+  	<string name="lap_consSub_false">零件,批次,每箱,供方,采购单,采购单行号不能为空!</string>
+  	<string name="lap_sendSave_false">单号,实收不能为空!</string>
+  	<string name="send_qtySub_false">该配送单没有数据!</string>
+  	<string name="send_qty_false">实收数不能大于送货量!</string>
+  	<string name="send_qty2_false">实收数不能为0!</string>
+  	<string name="cnrt_sub_false">请先查询要提交的数据！</string>
+  	<string name="Reploc_false">查询数据量大，请最少输入一个查询条件</string>
+  	<string name="Rece_false">查询数据量大，请输入收货日期查询条件</string>
+  	<string name="Rfl_false">查询数据量大，请输入标签查询条件</string>
+  	<string name="Px_Qty_false">拼箱数不能大于每箱数</string>
+  	<string name="Px_Scan_false">该条码被扫描过</string>
+  	<string name="Px_Part_false">必须同零件同批次才能拼箱</string>
+  	<string name="Px_Sub_false">至仓,新批次不能为空</string>
+  	<string name="ScanC_Sub_false">请扫描要关闭的条码</string>
+  	<string name="kbsc_consSub_false">没有可提交的数据！</string>
+  	<string name="qcrnt_false_sub">检验数不等于已拣量不能提交！</string>
+  	<string name="newpx_false_bar">只有同零件同批次的才能拆拼箱</string>
+  	  	  	<!-- colin-->
+  	<string name="plt_traybox_false">此条码为箱,不能捆托</string>
+  	<string name="plt_traymax_false">超过托盘的最大数量</string>
+  	<string name="plt_amount_false">超过数量为空,请先维护</string>
+  	<string name="Plt_tray_false">确认托盘要拼托</string>
+  	<string name="Plt_trayp_false">请先扫描或输入托号</string>
+  	<string name="Plt_trayqty_false">请先维护托盘量</string>
+  	<string name="Plt_traypv_false">请扫描同零件同批次的条码</string>
+  	<string name="Plt_traysm_false">请条码已经做过捆托</string>
+  	<string name="Px_Pscan_false">必须同零件同批次才能捆托</string>
+  	<string name="Pftporc_consSave_false">送货单,条码,供方,零件,箱数,每箱,总量,仓储不能为空!</string>
+  	<string name="pftporc_sub_false">送货单号不能为空</string>
+  	<string name="pftporc_sub_false2">此送货单没有收货记录不能提交</string>
+</resources>

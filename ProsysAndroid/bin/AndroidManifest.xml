@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.profitles.activity"
+    android:versionCode="1"
+    android:versionName="V201811071630" >
+
+ 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+  	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+  	
+  	
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" android:isGame="true" android:enabled="true" >
+        <activity
+            android:screenOrientation="unspecified"
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppLogin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".CnrcActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_cnrc" >
+        </activity>
+        <activity
+            android:name=".QcrtnActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_qcrtn" >
+        </activity>
+        <activity
+            android:name=".DemoActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_demo" >
+        </activity>
+        <activity
+            android:name=".UpBinActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_up_bin" >
+        </activity>
+        <activity
+            android:name=".PkActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_pk" >
+        </activity>
+        <activity
+            android:name=".PkUpdActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_pkupd" >
+        </activity>
+        <activity
+            android:name=".QcpickActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_qcpick" >
+        </activity>
+         <activity
+            android:name=".TrActivity"
+             android:screenOrientation="unspecified"
+            android:label="@string/title_activity_tr" >
+        </activity>
+        <activity
+            android:name=".XBoxActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_xbox" >
+        </activity>
+        <activity
+            android:name="PickActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_pick" >
+        </activity>
+        <activity
+            android:name="PpvActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_ppv" >
+        </activity>
+        <activity
+            android:name="FjActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_fj" >
+        </activity>
+        <activity
+            android:name=".JhwrkActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_jhwrk" >
+        </activity>
+        <!-- System Don't Update -->
+        <activity
+            android:name=".CnRpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateAlwaysHidden"  >
+        </activity>
+        <activity
+            android:name=".CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <activity
+            android:name=".LapActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_lap" >
+        </activity>
+        <activity
+            android:name=".SendActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_send" >
+        </activity>
+        <activity
+            android:name=".ReplocActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_reploc" >
+        </activity>
+        <activity
+            android:name=".RftriqActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_rftriq" >
+        </activity>
+        <activity
+            android:name=".CnRtActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_cnrt" >
+        </activity>
+        <activity
+            android:name=".JhwckActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_jhwrk" >
+        </activity>
+        <activity
+            android:name=".pkConfirmActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_pkConfirm" >
+        </activity>
+        <activity
+            android:name=".InventoryActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_inventory" >
+        </activity>
+         <activity
+            android:name=".LocLPActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_loclp" >
+        </activity>
+        <activity
+            android:name=".PorcActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_porc" >
+        </activity>
+        <activity
+            android:name=".FpsActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_fps" >
+        </activity>
+        <activity
+            android:name=".SocfmActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_socfm" >
+        </activity>
+        <activity
+            android:name=".DemoEasonActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_demoeason" >
+        </activity>
+        <activity
+            android:name=".RevhsActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_rece" >
+        </activity>
+        <activity
+            android:name=".RflhsActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_rfl" >
+        </activity>
+        <activity
+            android:name=".QipActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_qip" >
+        </activity>
+        <activity
+            android:name=".QibActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_qib" >
+        </activity>
+        <activity
+            android:name=".PxActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_px" >
+        </activity>
+        <activity
+            android:name=".PltActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_plt" >
+        </activity>
+        <activity
+            android:name=".ScanCActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_scanc" >
+        </activity>
+        <activity
+            android:name=".PftporcActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_pftporc" >
+        </activity>    
+        <activity
+            android:name=".DrActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_Dr" >
+        </activity>      
+        <activity
+            android:name=".SpellActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_Spell" >
+        </activity>  
+        <activity
+            android:name=".TrLActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_trl" >
+        </activity>  
+        <activity
+            android:name=".PmActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_Pm" >
+        </activity> 
+        <activity
+            android:name=".PrActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_Pr" >
+        </activity> 
+        <activity
+            android:name=".WsActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_Ws" >
+        </activity> 
+        <activity
+            android:name=".InventoryPQCActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_InventoryPQC" >
+        </activity>
+        <activity
+            android:name=".RScanSActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_rScanS" >
+        </activity>
+        <activity
+            android:name=".WostActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_wost" >
+        </activity>  
+        <activity
+            android:name=".LastQcActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_lastQc" >
+
+        </activity> 
+        <activity
+            android:name=".CoFTheScanActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_coFTheScan" >
+        </activity> 
+
+        <activity
+            android:name=".LastWgActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_lastWg" >
+
+        </activity>  
+        <activity
+            android:name=".WostQcActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_wostQc" >
+        </activity>
+
+        <activity
+            android:name=".PdActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_pd" >
+        </activity>
+
+        
+        <activity
+            android:name=".WoQcOkActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_woQcOk" >
+        </activity>
+        
+        <activity
+            android:name=".WoqcngActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_woqcng" >
+        </activity>
+
+       <activity
+            android:name=".RtnPoActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_rtnpo" >
+        </activity>
+
+        
+        <activity
+            android:name=".DismantlingActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_dis" >
+        </activity>
+
+
+        <activity
+            android:name=".LocFpsActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_locfps" >
+        </activity> 
+        
+        <activity
+            android:name=".SortPrintActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_sortprint" >
+        </activity> 
+         <activity
+            android:name=".UpStatusActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_upstatus" >
+        </activity> 
+        <activity
+            android:name=".PdNewActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_pdnew" >
+        </activity> 
+        <activity
+            android:name=".NewPxActivity"
+            android:label="@string/title_activity_pxnew" >
+        </activity> 
+        <activity
+            android:name=".QtyInsActivity"
+            android:label="@string/title_activity_QtyIns" >
+        </activity> 
+        
+        <activity
+            android:name=".UpBinPrActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_UpBinPr" >
+        </activity> 
+        <activity
+            android:name=".UpBinPrsActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_UpBinPrs" >
+        </activity>
+        <activity
+            android:name=".RcActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_rc" >
+        </activity>  
+        <activity
+            android:name=".NewDismantlingActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_NewDis" >
+        </activity>  
+        <!-- 盘点修改数量功能 -->
+         <activity
+            android:name=".PdXjActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_PdXj" >
+        </activity> 
+        <!-- 销售分拣撤销 -->
+         <activity
+            android:name=".PsterActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_Pster" >
+        </activity>
+        <!-- 成品检验 -->
+        <activity
+            android:name=".QuaInsActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_QuaIn" >
+        </activity>
+        <!-- block功能-->
+        <activity
+            android:name=".BarLdActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_QuaIn" >
+        </activity>
+    <!-- 新完工功能-->
+        <activity
+            android:name=".FinshOPActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_FinshOP" >
+        </activity>
+     <!-- 展示PDF界面-->
+        <activity
+            android:name=".DrawPdfActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_DrawPd" >
+        </activity>
+     <!-- 主计划界面 -->
+        <activity
+            android:name=".WoListViewActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_WoListView" >
+        </activity>
+      <!-- 计划产线-->
+        <activity
+            android:name=".LineWoListViewActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_LineWoListView" >
+        </activity>
+      <!-- 成品倒箱-->
+        <activity
+            android:name=".CpdxActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_Cpdx" >
+        </activity>
+     <!-- 交接项-->
+        <activity
+            android:name=".HandoverItemActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_HandoverItem" >
+        </activity>
+         <!-- 生产自检 -->
+        <activity
+            android:name=".PsiActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_PsiActivity" >
+        </activity>
+        
+        <!-- 已检信息 -->
+        <activity
+            android:name=".CheckedInfoActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_CheckedInfo" >
+        </activity>
+        
+        <!-- 在检信息 -->
+        <activity
+            android:name=".CheckingInfoActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_CheckingInfo" >
+        </activity>
+        
+        <activity
+            android:name=".SelfActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_SelfActivity" >
+        </activity>
+        
+         <activity
+            android:name=".PsiSelfActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_PsiSelfActivity" >
+        </activity>
+        
+         <activity
+            android:name=".SelfItemActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_PsiSelfActivity" >
+        </activity>
+        
+         <activity
+            android:name=".SelfInsertActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_SelfInsertActivity" >
+        </activity>
+        
+        <activity
+            android:name=".BlockActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_BlockActivity" >
+        </activity>
+        
+        <activity
+            android:name=".DetermineActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_DetermineActivity" >
+        </activity>
+        
+        <activity
+            android:name=".PDFViewActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_PDFViewActivity" >
+        </activity>
+        
+        <activity
+            android:name=".IQCPDFViewActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_IQCPDFViewActivity" >
+        </activity>
+        <activity
+            android:name=".CustPartSerActivity"
+            android:screenOrientation="unspecified"
+            android:label="@string/title_activity_CustPartSerActivity" >
+        </activity>
+    </application>
+
+</manifest>

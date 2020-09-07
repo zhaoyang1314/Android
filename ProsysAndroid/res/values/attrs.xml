@@ -1,0 +1,43 @@
+<resources>
+
+    <!--
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    -->
+    
+    <declare-styleable name="EditAllView">
+        <attr name="isRequired" format="boolean" /> <!-- 必填 -->
+        <attr name="reqAltMsg" format="string" />	<!-- 必填提示 -->
+        <attr name="regValidata" format="string" />	<!-- 正则 -->
+        <attr name="regAltMsg" format="string" />	<!-- 正则验证 -->
+        <attr name="isReadOnly" format="boolean" />	<!-- 正则验证 -->
+        <attr name="hint" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyTabHost">
+        <attr name="attChildId" format="string" />
+        <attr name="attChildKey" format="string" />
+        <attr name="attChildName" format="string" />
+        <attr name="currentTab" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyDataGrid">
+        <attr name="attColKeys" format="string" />
+        <attr name="attColNames" format="string" />
+        <attr name="attColWidths" format="string" />
+        <attr name="attRowHeight" format="integer" />
+        <attr name="isShowSeq" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyEditText">
+        <attr name="isBlurRequired" format="boolean" />	<!-- 光标离开是否验证 -->
+        <attr name="blreAltMsg" format="string" />	<!-- 验证提示，默认提示必填和正则的内容 -->
+    </declare-styleable>
+    
+    <declare-styleable name="MyDateView">
+        <attr name="isDefToday" format="boolean" />
+        <attr name="attShowTitle" format="string" />
+    </declare-styleable>
+</resources>

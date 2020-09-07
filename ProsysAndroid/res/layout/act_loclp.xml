@@ -1,0 +1,204 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top|left"
+        android:orientation="vertical" >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.profitles.framwork.cusviews.view.MyTextView
+                    android:id="@+id/txv_loclpParts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="零件：" />
+
+                <com.profitles.framwork.cusviews.view.MyReadBQ
+                    android:id="@+id/etx_loclpParts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.profitles.framwork.cusviews.view.MyTextView
+                    android:id="@+id/txv_loclpLots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="批次：" />
+
+                <com.profitles.framwork.cusviews.view.MyReadBQ
+                    android:id="@+id/etx_loclpLots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.profitles.framwork.cusviews.view.MyTextView
+                    android:id="@+id/txv_loclpLocs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库位：" />
+
+                <com.profitles.framwork.cusviews.view.MyReadBQ
+                    android:id="@+id/etx_loclpLocs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.profitles.framwork.cusviews.view.MyTextView
+                    android:id="@+id/txv_loclpBins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="储位：" />
+
+                <com.profitles.framwork.cusviews.view.MyReadBQ
+                    android:id="@+id/etx_loclpBins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        android:id="@+id/txv_loclpAllQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数量：" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_loclpAllQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberDecimal" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        android:id="@+id/txv_loclpMultQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单包：" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_loclpMultQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberDecimal" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        android:id="@+id/txv_loclpBoxNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="箱数：" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_loclpBoxNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:inputType="number"/>
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        android:id="@+id/txv_loclpSanNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="散件：" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_loclpSanNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberDecimal" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                 <com.profitles.framwork.cusviews.view.MyTextView
+                        android:id="@+id/txv_loclpLineId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选中序号：" />
+                <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_loclpLineId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+           </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyDataGrid
+            android:id="@+id/dtg_LoclpList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            matt:attColKeys="LOC,BIN,PART,LOT,ALL_QTY,MULT_QTY,BOX_NUM,SAN_NUM,XSLD_UM,XSLD_PART_NAME,XSLD_STATUS_NAME,XSLD_GRADE,VEND"
+			matt:attColNames="库位,储位,零件,批次,数量,单包量,箱数,散件,单位,零件描述,库存状态,等级,供应商"
+			matt:attColWidths="150,150,180,240,160,100,100,100,100,100,100,100,100"
+            matt:attRowHeight="60"
+            matt:isShowSeq="true" >
+        </com.profitles.framwork.cusviews.view.MyDataGrid>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

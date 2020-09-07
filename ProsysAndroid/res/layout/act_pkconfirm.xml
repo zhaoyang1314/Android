@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvNbr"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ
+                android:id="@+id/etx_pkconfirmNbr"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true" 
+                android:text=""
+                matt:isBlurRequired="true"
+                matt:isRequired="true"
+                matt:reqAltMsg="@string/promptNbr" >
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvQty"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_pkconfirmQty"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="4"/> 
+
+        </LinearLayout>
+        
+ 	    <LinearLayout
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="419dp" >
+
+   			<com.profitles.framwork.cusviews.view.MyDataGrid
+   			    android:id="@+id/mdtg_pkconfirm"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="match_parent"
+   			    matt:attColKeys="RF_LINE,RF_PART,RF_ADDR,RF_LOT,RF_PK_QTY,RF_TO_LOC,RF_TO_BIN,RF_END_LOC,RF_END_BIN,RF_SCAN,PARTDESC"
+   			    matt:attColNames="行号,零件,供应商,批次,总量,源仓,源储,至仓,至储,条码,描述"
+   			    matt:attColWidths="150,250,300,700,150,200,200,200,200,1550,1550"
+   			    matt:attRowHeight="50"
+   			    matt:isShowSeq="false" >
+
+   			</com.profitles.framwork.cusviews.view.MyDataGrid>  
+   		</LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

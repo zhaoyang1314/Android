@@ -1,0 +1,42 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top|left"
+        android:orientation="vertical" >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp" >
+
+                <com.profitles.framwork.cusviews.view.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvBar" />
+                
+				<com.profitles.framwork.cusviews.view.MyReadBQ 
+                    android:id="@+id/etx_scancBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     matt:isBlurRequired="true">
+               </com.profitles.framwork.cusviews.view.MyReadBQ>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+         </com.profitles.framwork.cusviews.view.MyLinearLayout>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

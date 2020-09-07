@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:gravity="center|top"
+    tools:context="com.org.profitles.AppFunActivity" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:id="@+id/rltMainHead"
+            style="@style/lltMainHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="left|center_vertical"
+            android:minHeight="10dp"
+            android:orientation="horizontal" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txvTitle"
+            	android:layout_weight="2"
+            android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txvUser"
+            	android:layout_weight="1"
+             android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txvVersion"
+            android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyRelativeLayout
+            android:id="@+id/rltMainBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.4"
+            style="@style/lltMainBody">
+
+        </com.profitles.framwork.cusviews.view.MyRelativeLayout>
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:id="@+id/lltMainTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="right|center_vertical"
+            style="@style/lltToolCss"
+            android:orientation="vertical">
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txvBaseMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#e7e7e7" />
+	        <com.profitles.framwork.cusviews.view.MyLinearLayout
+	            android:id="@+id/lltMainToolBtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right|center_vertical"
+	            style="@style/lltToolCss"
+	            android:orientation="horizontal">
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnSubmit"
+	                style="@style/tolBtnCss"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnSubmit"
+	                android:layout_weight="1"
+	                android:visibility="gone" />
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnSave"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnSave"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnPrint"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="@string/btnPrint"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnSearch"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnSearch"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnEdit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnEdit"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnClose"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnClose"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnCancel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnCancel"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+				<com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnClear"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnClear"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+				<com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnBlock"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Block"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnReturn"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnReturn"
+	                style="@style/tolBtnCss"
+	                android:layout_weight="1"
+	                android:visibility="gone"/>
+	
+	            <com.profitles.framwork.cusviews.view.MyButton
+	                android:id="@+id/btnHelp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/btnHelp"
+	                android:layout_weight="1"
+	                style="@style/tolBtnCss"
+	                android:visibility="gone"/>
+	    
+			        <com.profitles.framwork.cusviews.view.MyLinearLayout
+			            android:id="@+id/lltIcoPlan"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@id/btnReturn"
+			            style="@style/lltToolCss"
+			            android:orientation="vertical">
+
+				        <com.profitles.framwork.cusviews.view.MyLinearLayout
+				            android:id="@+id/lltIcoImg"
+				            style="@style/lltToolCss"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+				            android:layout_toRightOf="@id/btnReturn"
+				            android:orientation="horizontal"
+				            >
+					             <ImageView
+					                android:id="@+id/txvImage1"
+					                android:layout_width="15dp"
+					                android:layout_height="match_parent"
+					                android:background="#e7e7e7" 
+					                android:adjustViewBounds="true"
+					                android:scaleType="centerCrop"
+					                />
+				        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+				        
+				        <com.profitles.framwork.cusviews.view.MyLinearLayout
+				            android:id="@+id/lltIcoImgTxt"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+				            style="@style/lltToolCss"
+				            android:orientation="horizontal">
+					            <com.profitles.framwork.cusviews.view.MyTextView
+					                android:id="@+id/txvBaseMsg4"
+					                android:layout_width="wrap_content"
+					                android:layout_height="wrap_content"
+					                android:background="#e7e7e7" 
+					                style="@style/TextFont"
+					                android:textSize="9dp"
+					                android:gravity="center_horizontal"
+					                android:inputType="text"/>
+				        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+			        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+                <com.profitles.framwork.cusviews.view.MyEditText
+                    android:id="@+id/etx_BaseFocues"
+                   	android:layout_width="1dp"
+                    android:layout_height="1dp" 
+                    android:focusable="false"/>
+			</com.profitles.framwork.cusviews.view.MyLinearLayout>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</RelativeLayout>

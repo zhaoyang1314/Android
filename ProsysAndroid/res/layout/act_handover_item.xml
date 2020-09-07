@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+            <LinearLayout
+                android:id="@+id/MyTable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+    
+   
+                  
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|right"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/btnQr"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:background="@drawable/login_btn"
+            android:isScrollContainer="true"
+            android:paddingTop="1dp"
+            android:text="@string/btnQr"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</RelativeLayout>

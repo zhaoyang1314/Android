@@ -1,0 +1,306 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout 
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    tools:context="com.org.profitles.LoginActivity" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:id="@+id/llt_RcOne"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:id="@+id/llt_RcTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:id="@+id/llt_RcThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                 <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:id="@+id/llt_PorcThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txvBar"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                     <com.profitles.framwork.cusviews.view.MyReadBQ 
+	                     android:id="@+id/etx_RcBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        matt:isBlurRequired="true" >
+               		</com.profitles.framwork.cusviews.view.MyReadBQ>
+
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+               <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </com.profitles.framwork.cusviews.view.MyLinearLayout> 
+                
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_PorcFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txvVend"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcVend"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:enabled="false">
+						
+                        <requestFocus />
+                    </com.profitles.framwork.cusviews.view.MyEditText>
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcVend_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.04"
+                        android:background="@null"
+                        android:ems="10"
+                        android:enabled="false" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+                
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcSeven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txvPart"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcPart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:background="@null"
+                        android:enabled="false"/>
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcEight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" >
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcPart_Desc"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="64dp"
+                        android:layout_weight="0.35"
+                        android:background="@null"
+                        android:enabled="false"/>
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcUM"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="false"/>
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+                
+               <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcTwelve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txvLot"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcLot"
+                        android:layout_width="146dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.28"
+                        android:background="@null"
+                        android:enabled="false" />
+                    
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcLot_Gone"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcNine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txvBox"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcBox"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39"
+                        android:inputType="numberSigned"/>
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/txvUnit"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcUnit"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:enabled="false" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txvScat"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcScat"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcSum"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.39"
+                        android:enabled="false"
+                        android:background="@null" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+                
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcEleven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txvBoxQty"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcBoxQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:background="@null"
+                        android:enabled="false"/>
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/llt_RcEleven2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        style="@style/CodeFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txvLocBin"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_RcLocBin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:background="@null"
+                        android:enabled="false"/>
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+         <com.profitles.framwork.cusviews.view.MyDataGrid
+             android:id="@+id/mdtg_cons"
+             android:layout_width="match_parent"
+             android:layout_height="240dp"
+             matt:attColKeys="RF_PART,RF_LOT,RF_QTY,RF_ADDR,RF_SCAN"
+             matt:attColNames="零件,批次,数量,供应商,条码"
+             matt:attColWidths="150,150,120,150,360"
+             matt:attRowHeight="60"
+             matt:isShowSeq="false" >
+
+   		</com.profitles.framwork.cusviews.view.MyDataGrid>  
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

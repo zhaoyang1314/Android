@@ -1,0 +1,52 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    tools:context="com.org.profitles.CnRpActivity" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:id="@+id/llt_CnrpBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top|left"
+        android:orientation="vertical" >
+		
+    	<com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:id="@+id/llt_CnrpQuery"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+
+	        <com.profitles.framwork.cusviews.view.MyTextView
+	            android:id="@+id/myTextView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="送达日期：" />
+
+	        <com.profitles.framwork.cusviews.view.MyDateView
+	            android:id="@+id/dtv_CnrcETA"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:ems="10"
+				matt:isDefToday="true"
+				matt:attShowTitle="选择送达日期">
+	            <requestFocus />
+	        </com.profitles.framwork.cusviews.view.MyDateView>
+    	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+		
+    	<com.profitles.framwork.cusviews.view.MyDataGrid
+				android:id="@+id/dtg_CnrpConsInfo"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				matt:attColKeys="XRCONS_NO,XRCONS_VEND,XRCONS_ETD,XRCONS_ETA,XRCONS_STAT"
+				matt:attColNames="单号,供应商,送出日期,送达日期,状态" 
+				matt:attColWidths="300,220,240,240,120"
+				matt:attRowHeight="60"
+				matt:isShowSeq="true">
+
+		  </com.profitles.framwork.cusviews.view.MyDataGrid>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

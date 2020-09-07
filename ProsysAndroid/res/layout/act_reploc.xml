@@ -1,0 +1,114 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout 
+	xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top|left"
+        android:orientation="vertical" >
+		
+         <com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center|top|left"
+    	    android:orientation="horizontal" >
+
+	        <com.profitles.framwork.cusviews.view.MyTextView
+	            android:id="@+id/txv_replocscan"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="扫码：" />
+	       <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/etx_replocscan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+	       </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        
+        
+    	<com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+
+	        <com.profitles.framwork.cusviews.view.MyTextView
+	            android:id="@+id/txv_replocPart"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="零件：" />
+	      <com.profitles.framwork.cusviews.view.MyEditText
+                 android:id="@+id/etx_replocPart"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="请至少输入一个查询条件"/>
+	        
+    	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+    	<com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+	        <com.profitles.framwork.cusviews.view.MyTextView
+	            android:id="@+id/txv_replocLot"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="批次：" />
+	      <com.profitles.framwork.cusviews.view.MyEditText
+                 android:id="@+id/etx_replocLot"
+                 android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+	        
+    	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+              
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_replocLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库位：" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/etx_replocLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+		</com.profitles.framwork.cusviews.view.MyLinearLayout>
+			
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content" >
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_replocBin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="储位："/>
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	                android:id="@+id/etx_replocBin"
+                	android:layout_width="match_parent"
+                	android:layout_height="wrap_content"/>
+
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        
+		<com.profitles.framwork.cusviews.view.MyDataGrid
+		    android:id="@+id/dtg_ReplocConsInfo"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    matt:attColKeys="XSLD_LOC,XSLD_BIN,XSLD_PART,XSLD_QTY_OH,XSLD_LOT,XSLD_UM,XSLD_PART_NAME,XSLD_STATUS_NAME,XSLD_GRADE"
+		    matt:attColNames="库位,储位,零件,数量,批次,单位,零件描述,库存状态,等级"
+		    matt:attColWidths="100,100,240,100,120,100,300,180,100"
+		    matt:attRowHeight="60"
+		    matt:isShowSeq="true" >
+
+		</com.profitles.framwork.cusviews.view.MyDataGrid>
+    	
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

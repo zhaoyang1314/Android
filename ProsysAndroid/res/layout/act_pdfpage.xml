@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_replocLot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零件：" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_pdfPart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="5" />
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_cDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零件描述：" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/txv_pDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="5" />
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+    
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+       >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_rep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户：" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_kh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="5" />
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_cdda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户件号：" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/txv_khjh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="5" />
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+     <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="60dip">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/MyTable2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:gravity="center|top"
+    android:minHeight="40dp"
+    tools:context="com.org.profitles.LoginActivity" >
+ 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/imgLoginLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dip"
+                android:adjustViewBounds="true"
+                android:maxWidth="200dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/login_logo2"/>
+     <TextView
+                        android:id="@+id/txvLoginVer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+<!-- 		    <com.profitles.framwork.cusviews.view.MyTextView -->
+<!-- 		        android:id="@+id/txtLogo" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content"  -->
+<!--                 android:layout_marginTop="35dip" -->
+<!--                 android:maxWidth="300dip"   -->
+<!-- 		        android:textColor="#ff0000" -->
+<!-- 		        android:textSize="46sp" -->
+<!-- 		        android:textStyle="bold" -->
+<!--                 android:text="COSMO-WMS" /> -->
+                
+<!-- 		    <com.profitles.framwork.cusviews.view.MyTextView -->
+<!-- 		        android:id="@+id/txtTitle" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content"  -->
+<!--                 android:maxWidth="200dip"   -->
+<!-- 		        android:textColor="#fff" -->
+<!-- 		        android:textSize="20sp" -->
+<!--                 android:text="用户登录" /> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:theme="@style/login_body">
+
+                <com.profitles.framwork.cusviews.view.MyEditText
+                    android:id="@+id/edtLoginId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_TxtLblUid"
+                    android:drawableRight ="@drawable/login_uname"
+                    android:text=""
+                    matt:isBlurRequired="true"
+			        android:textSize="16sp"
+                	matt:isRequired="true"
+                	matt:reqAltMsg="@string/login_LoginIdReq"/>
+
+                <com.profitles.framwork.cusviews.view.MyEditText
+                    android:id="@+id/edtLoginPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_TxtLblPwd"
+                    android:text=""
+                    android:drawableRight ="@drawable/login_upwd"
+                    android:inputType="textPassword"
+			        android:textSize="16sp"
+                    matt:isRequired="true"
+                    matt:reqAltMsg="@string/login_PwdReq" />
+
+                <com.profitles.framwork.cusviews.view.MySpinner
+                    android:id="@+id/login_spnLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    matt:hint="@string/login_TxtLblLocQ"
+                	matt:isRequired="true"
+                	matt:reqAltMsg="@string/login_LocReq"/>
+
+                <com.profitles.framwork.cusviews.view.MySpinner
+                    android:id="@+id/login_spnDomain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    matt:hint="@string/login_TxtLblDomain"
+                	matt:isRequired="true"
+                	matt:reqAltMsg="@string/login_DomainReq"/>
+                
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content">
+					<com.profitles.framwork.cusviews.view.MyEditText
+		                android:id="@+id/dateDisplay"
+		                android:layout_width="210dp"
+		                android:layout_height="wrap_content"
+			        	android:textSize="16sp"
+		                android:ems="4"/>
+					<com.profitles.framwork.cusviews.view.MyButton
+					    android:id="@+id/dateChoose"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/login_DateChoose" 
+			        	android:textColor="#fff"
+	                    android:background="@drawable/login_btn"/>
+				 </com.profitles.framwork.cusviews.view.MyLinearLayout>
+				 
+				 <com.profitles.framwork.cusviews.view.MyLinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingBottom="2dp" >
+					<CheckBox  
+			            android:id="@+id/cb_mima"  
+			            android:layout_width="wrap_content"  
+			            android:layout_height="wrap_content"  
+			            android:text="记住密码"  
+			            android:textColor="#000000" /> 
+					<CheckBox  
+			            android:id="@+id/cb_auto"  
+			            android:layout_width="wrap_content"  
+			            android:layout_height="wrap_content"  
+			            android:layout_marginLeft="35dip"  
+			            android:text="自动登录"  
+			            android:textColor="#000000" /> 
+				 </com.profitles.framwork.cusviews.view.MyLinearLayout>
+				 
+			    <com.profitles.framwork.cusviews.view.MyTextView
+			        android:id="@+id/txtSplit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" 
+			        android:textColor="#fff"
+			        android:textSize="10sp"
+	                android:text="" />
+                
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_lblLogin" 
+                    android:height="32sp"
+		        	android:textColor="#fff"
+			        android:textSize="16sp"
+			        android:paddingTop="1dp"
+                    android:background="@drawable/login_btn"/>
+
+                <Button
+                    android:id="@+id/btnMore"
+    				android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_lblMore" 
+                    android:gravity="right"
+                    android:background="@android:color/transparent"/>
+
+				
+			    <com.profitles.framwork.cusviews.view.MyTextView
+			        android:id="@+id/txtUpding"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" 
+	                android:visibility="gone"
+	                android:gravity="center"
+	                android:text="更新中...，请稍后！" />
+			    
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.profitles.framwork.cusviews.view.MyTabHost
+        android:id="@+id/login_tbladv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+	    matt:attChildId="lltAbout,lltUpdSer,lltUpdPwd"
+	    matt:attChildKey="UpdPwd,UpdSer,About"
+	    matt:attChildName="关于,服务器配置, ">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="38dp">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+	            android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/lltAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txvLoginAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_TxtLblAbout"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/txtLoginCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_TxtLblCopy"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lltUpdSer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/edtSerLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_TxtLblSerUrl" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/edtSerBiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_TxtLblLogSer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lltUpdPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" 
+                    android:padding="5dp">
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/edtChgPwd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    	android:visibility="gone"
+                        android:ems="10"
+                        android:hint="@string/login_TxtLblNewPwd" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/edtChgPwd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    	android:visibility="gone"
+                        android:ems="10"
+                        android:hint="@string/login_TxtLblNewPwd2" >
+
+                    </com.profitles.framwork.cusviews.view.MyEditText>
+
+                </LinearLayout>
+                
+                
+            </FrameLayout>
+        </LinearLayout>
+    </com.profitles.framwork.cusviews.view.MyTabHost>
+
+</RelativeLayout>

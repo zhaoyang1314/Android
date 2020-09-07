@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+      
+      	<LinearLayout style="@style/TextFont" >
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvFinishedBarcode"
+                style="@style/TextFont" />
+            
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/ext_lastBar"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>  
+      	
+		
+        
+		<LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvProList"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_lastProList"
+                style="@style/TextFont" 
+                android:background="@null"
+	            android:enabled="false"
+                android:ems="11"/>
+        </LinearLayout>
+        
+		<LinearLayout style="@style/TextFont" >
+            
+			<com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvShift"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_lastShift"
+                style="@style/TextFont" 
+                android:background="@null"
+	            android:enabled="false"
+                android:ems="11"/>
+        </LinearLayout>
+		
+     	 <LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvPart"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_lastParts"
+                style="@style/TextFont" 
+                android:background="@null"
+	            android:enabled="false"
+                android:ems="11"/>
+			<com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_jhUm"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="4"
+	                android:enabled="false" /> 
+        </LinearLayout>
+        
+     	<LinearLayout style="@style/TextFont" >
+     	    <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_lastDesc"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+           			android:layout_marginLeft="60dp"
+	                android:background="@null"
+	                android:ems="10"
+	                android:enabled="false" /> 
+     	</LinearLayout>
+     	 <LinearLayout style="@style/TextFont" >
+             <com.profitles.framwork.cusviews.view.MyTextView
+                 android:id="@+id/txv_trPartname"
+                style="@style/TextFont" />
+         </LinearLayout>
+     	 <LinearLayout style="@style/TextFont"  >
+            
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLot"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_lastLot"
+                style="@style/TextFont" 
+	            android:background="@null"
+	            android:enabled="false"
+                android:ems="11"/>
+
+        </LinearLayout>
+        <LinearLayout style="@style/TextFont"  >
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvWorkShop"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/ext_lastWorkShop"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:enabled="false"
+	                android:ems="5" /> 
+	                
+	          <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLine"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/ext_lastLine"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="5"
+	                android:enabled="false" /> 
+
+        </LinearLayout>
+        
+        <LinearLayout style="@style/TextFont" >
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvBar"
+                style="@style/TextFont" />
+            
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/ext_lastSacn"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>  
+        
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+         <com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+	        <com.profitles.framwork.cusviews.view.MyTextView
+	            android:id="@+id/txv_rece_date"
+	            android:layout_width="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_height="wrap_content"
+	            android:text="收货日期:" 
+	            />
+
+	        <com.profitles.framwork.cusviews.view.MyDateView
+	            android:id="@+id/dtv_rece_date"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10"
+				matt:isDefToday="true"
+				matt:attShowTitle="选择日期"> 
+				<requestFocus />
+	        </com.profitles.framwork.cusviews.view.MyDateView>
+	            
+	           
+	        
+    	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+    
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+              
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_rece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="收货单号:" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/etx_rece"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+		</com.profitles.framwork.cusviews.view.MyLinearLayout>
+			
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content" >
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_recenbr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="采购单号:"/>
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	                android:id="@+id/etx_recenbr"
+                	android:layout_width="match_parent"
+                	android:layout_height="wrap_content"/>
+
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        
+       <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content" >
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_sendnbr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="送货单号:"/>
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	                android:id="@+id/etx_sendnbr"
+                	android:layout_width="match_parent"
+                	android:layout_height="wrap_content"/>
+
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+		
+    	
+    	
+    	<com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+
+	        <com.profitles.framwork.cusviews.view.MyTextView
+	            android:id="@+id/txv_receventor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:text="供应商家:" />
+	      <com.profitles.framwork.cusviews.view.MyReadBQ
+                 android:id="@+id/etx_receventor"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 />
+	        
+    	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+    	
+    	<com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+
+    		<com.profitles.framwork.cusviews.view.MyTextView
+    		    android:id="@+id/txv_recepart"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_gravity="center_vertical"
+    		    android:text="零件:" />
+
+	      <com.profitles.framwork.cusviews.view.MyReadBQ
+                 android:id="@+id/etx_recepart"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 />
+	        
+    	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+		<com.profitles.framwork.cusviews.view.MyDataGrid
+		    android:id="@+id/dtg_Recehist"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    matt:attColKeys="XSPRH_RECEIVER,XSPRH_PART,XSPRH_VEND,XSPRH_NBR,XSPRH_PS_NBR,XSPRH_RCP_DATE,XSPRH_LINE,XSPRH_RCVD,XSPRH_PUR_COST,XSPRH_LOT,XSPRH_SITE"
+  		    matt:attColNames="收货单号,零件,供应商,采购单号,送货单号,收货日期,行号,收货数量 ,最后价格, 生产商批号 ,所属公司	" 	   
+		    matt:attColWidths="350,400,300,400,400,300,100,400,400,400,400"
+		    matt:attRowHeight="60"
+		    matt:isShowSeq="true" >
+
+		</com.profitles.framwork.cusviews.view.MyDataGrid>
+    	
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

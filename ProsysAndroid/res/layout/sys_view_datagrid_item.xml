@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/sys_dtgItemText"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="center"  />
+    
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/sys_dtgItemHideText"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="center" 
+        android:visibility="gone"  />
+    
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/sys_dtgRowIndex"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="center" 
+        android:visibility="gone"  />
+    
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/sys_dtgColIndex"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="center" 
+        android:visibility="gone"  />
+
+</LinearLayout>

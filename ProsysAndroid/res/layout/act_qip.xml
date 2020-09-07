@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvPart"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ
+                android:id="@+id/etx_qipPart"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true" 
+                android:text=""
+                matt:isBlurRequired="true"
+                matt:isRequired="true" >
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+
+        </LinearLayout>
+        
+ 	    <LinearLayout
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="419dp" >
+
+   			<com.profitles.framwork.cusviews.view.MyDataGrid
+   			    android:id="@+id/mdtg_qi"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="match_parent"
+   			    matt:attColKeys="XSLD_LOC,XSLOC_DESC,XSLD_BIN,XSLD_PART,XSLD_QTY_OH,XSLD_LOT,XSLD_UM,XSLD_PART_NAME,XSLD_STATUS_NAME,XSLD_GRADE"
+   			    matt:attColNames="库位,库位描述,储位,零件,数量,批次,单位,零件描述,库存状态,等级"
+   			    matt:attColWidths="100,150,100,240,100,110,90,270,160,100"
+   			    matt:attRowHeight="60"
+   			    matt:isShowSeq="false" >
+
+   			</com.profitles.framwork.cusviews.view.MyDataGrid>  
+   		</LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

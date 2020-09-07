@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	<!--  <ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:max="100" />
+  
+	  <TextView
+	    android:id="@+id/textView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/progressBar"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="23dp"
+	    android:text="" /> -->
+  
+	 
+    <com.profitles.framwork.cusviews.view.MyTabHost
+        android:id="@+id/tbl_pkAdv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        matt:attChildId="d_check_list,y_check_list"
+        matt:attChildKey="d_view,y_view"
+        matt:attChildName="待检,已检" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/d_check_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+                    <!--  
+                    <com.profitles.framwork.cusviews.view.MyDataGrid
+                        android:id="@+id/d_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        matt:attColKeys="INDEXS,QAT_CSP_DATE,QAT_CSP_TIME,QAT_OP_SHIFT,QAT_CSP_USER,QAT_OP_PART,QAT_CUST_PART,QAT_REV,QAT_OP_PART_DESC,QAT_TYPE"
+                        matt:attColNames="序号,送检日期,送检时间,班次,送检人,物料号,客户件号,版本号,物料描述,类型"
+                        matt:attColWidths="100,300,300,100,200,500,300,200,500,200"
+                        matt:isShowSeq="false" >
+                    </com.profitles.framwork.cusviews.view.MyDataGrid>
+                   	-->
+                   	<!-- INDEXS 前面的序号 -->
+                   	<com.profitles.framwork.cusviews.view.MyDataGrid
+                        android:id="@+id/d_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        matt:attColKeys="INDEXS,QAT_SN,QAT_OP_PART_DESC,QAT_CUST_PART,QAT_CSP_DATE,QAT_OP_SHIFT_NM,QAT_CSP_USER,QAT_OP_PART,QAT_REV,QAT_SPACE,QAT_SCAN"
+                        matt:attColNames="序号,SN码,物料描述,客户件号,送检日期,班次,送检人,物料号,版本号,备注,序列号"
+                        matt:attColWidths="100,130,500,130,400,150,200,200,450,200,800"
+                        matt:isShowSeq="false" 
+                        >
+                    </com.profitles.framwork.cusviews.view.MyDataGrid>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/y_check_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <com.profitles.framwork.cusviews.view.MyDataGrid
+                        android:id="@+id/y_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        matt:attColKeys="INDEXS,QAT_SN,QAT_OP_PART_DESC,QAT_CUST_PART,QAT_TYPE_NM,QAT_OP_SHIFT,QAT_CSP_USER,QAT_CHK_USER,QAT_EDITION,QAT_OUT_SLT,QAT_SIZE_SLT,QAT_JDG_SLT,QAT_SECD_RESULT,QAT_SLT_NM,QAT_OP_PART,QAT_SPACE,QAT_SCAN,QAT_CHK_TIME,QAT_CSP_DATE"
+                        matt:attColNames="序号,SN码,物料描述,客户件号 ,检测机型,班次,送检人,检验人,版本号,外观结果,尺寸结果,判定结果,再次判定结果,结论,物料号,备注,序列号,检验完成时间,送检日期"
+                        matt:attColWidths="100,130,500,130,200,150,150,150,150,300,300,200,300,200,150,100,900,350,350"
+                        matt:isShowSeq="false" >
+                    </com.profitles.framwork.cusviews.view.MyDataGrid>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.profitles.framwork.cusviews.view.MyTabHost>
+
+</RelativeLayout>

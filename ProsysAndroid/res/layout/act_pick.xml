@@ -1,0 +1,120 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout 
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="UnusedNamespace" >
+
+     <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+        
+         <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp" >
+                <com.profitles.framwork.cusviews.view.MyTextView
+                    android:id="@+id/txv_PickPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvPart" />
+
+                <com.profitles.framwork.cusviews.view.MyReadBQ 
+                    android:id="@+id/etx_PikcPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            
+         <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" >
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_PikcPartDesc"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="44dp"
+                        android:layout_weight="0.35"
+                        android:text="氯醚橡胶 PECO（120508）"
+                        android:background="@null"
+                        android:enabled="false"/>
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_PikcUm"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="KG"
+                        android:background="@null"
+                        android:enabled="false"/>
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+ 		   <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp" >
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        android:id="@+id/txv_PickUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txvUnit" />
+                       
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_PikcUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10" 
+                        android:text="20.0"
+                        android:enabled="false"
+                    	android:background="@null"/>
+
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <com.profitles.framwork.cusviews.view.MyTextView
+                        android:id="@+id/txv_PickSplit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txvGongWei" />
+
+                    <com.profitles.framwork.cusviews.view.MyEditText
+                        android:id="@+id/etx_PikcSplit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CHG-001" />
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            
+ 		   <com.profitles.framwork.cusviews.view.MyDataGrid
+ 		       android:id="@+id/mdtg_qcpick22"
+ 		       android:layout_width="match_parent"
+ 		       android:layout_height="320dp"
+ 		       matt:attColKeys="NAME,NAMEDESC,DW,MX,GW,SUM"
+ 		       matt:attColNames="零件,描述,单位,每箱,工位,总数"
+ 		       matt:attColWidths="200,260,120,120,180,120"
+ 		       matt:attRowHeight="80"
+ 		       matt:isShowSeq="false" >
+
+   		 </com.profitles.framwork.cusviews.view.MyDataGrid> 
+	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+ </com.profitles.framwork.cusviews.view.MyRelativeLayout>   

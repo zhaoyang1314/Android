@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    
+      	<LinearLayout style="@style/TextFont" >
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvBar"
+                style="@style/TextFont" />
+            
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/ext_jhBar"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>  
+      	
+		<LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLocBin" 
+                android:layout_height="50dp"
+                style="@style/TextFont"/>
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/ext_jhLocBin"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+            
+     	</LinearLayout>
+        
+		<LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvVend"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_jhVend"
+                android:text=""
+                style="@style/TextFont" 
+                android:ems="11"/>
+
+        </LinearLayout>
+		
+     	 <LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvPart"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_jhParts"
+                android:text=""
+                style="@style/TextFont" 
+                android:ems="8"/>
+			<com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_jhUm"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="4"
+	                android:enabled="false" /> 
+        </LinearLayout>
+        
+     	<LinearLayout style="@style/TextFont" >
+     	    <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_jhDesc"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+           			android:layout_marginLeft="60dp"
+	                android:background="@null"
+	                android:ems="10"
+	                android:enabled="false" /> 
+     	</LinearLayout>
+     	
+     	 <LinearLayout style="@style/TextFont" >
+
+             <com.profitles.framwork.cusviews.view.MyTextView
+                 android:id="@+id/txv_trPartname"
+                style="@style/TextFont" />
+
+         </LinearLayout>
+         
+     	 <LinearLayout style="@style/TextFont"  >
+            
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLot"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_jhLot"
+                android:text=""
+                style="@style/TextFont" 
+                android:ems="11"/>
+
+        </LinearLayout>
+        
+     	<LinearLayout style="@style/TextFont"  >
+            
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvBox"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+
+              <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_jhBox"
+                android:inputType="numberSigned"
+                style="@style/TextFont" 
+                android:ems="4"/>
+              
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvUnit"
+                style="@style/TextFont" />
+              
+			  <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_jhUnit"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="5"
+	                android:enabled="false" /> 
+              
+        </LinearLayout>
+        
+     	<LinearLayout style="@style/TextFont"  >
+     	    
+     	      <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvScat"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+     	    
+     	      <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_jhScat"
+                style="@style/TextFont" 
+                android:ems="7"/>
+     	      
+     	      <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/ext_jhSCount"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="5"
+                	android:inputType="numberSigned"
+	                android:enabled="false" />
+     	</LinearLayout>
+     	
+     	<LinearLayout style="@style/TextFont"  >
+     	    
+     	    <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvType"
+                style="@style/TextFont" />
+     	    
+     	      <com.profitles.framwork.cusviews.view.MySpinner
+                android:id="@+id/spn_jhReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30" 
+                matt:isRequired="true" />
+     	    
+     	</LinearLayout>
+	 
+    </LinearLayout>
+</RelativeLayout>

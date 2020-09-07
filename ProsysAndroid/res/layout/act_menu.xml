@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.profitles.framwork.cusviews.view.MyRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dip" >
+
+            <ImageView
+                android:id="@+id/imgMenuLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/login_logo2" />
+    
+<!-- 		    <com.profitles.framwork.cusviews.view.MyTextView -->
+<!-- 		        android:id="@+id/txtLogo" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content"  -->
+<!-- 		        android:textColor="#ff0000" -->
+<!-- 		        android:textSize="46sp" -->
+<!-- 		        android:textStyle="bold" -->
+<!--                 android:text="COSMO-WMS" /> -->
+        </com.profitles.framwork.cusviews.view.MyRelativeLayout>
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:id="@+id/lltMenuBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical" >
+
+            <com.profitles.framwork.cusviews.view.MyGridView
+                android:id="@+id/gdvMenuItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" >
+            </com.profitles.framwork.cusviews.view.MyGridView>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            style="@style/lltToolCss"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <com.profitles.framwork.cusviews.view.MyButton
+                android:id="@+id/btnMenuRtn"
+                style="@style/tolBtnCss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft ="@drawable/menu_btn_back"
+            	android:layout_weight="1"
+                android:text="返回上级" />
+
+            <com.profitles.framwork.cusviews.view.MyButton
+                android:id="@+id/btnMenuHome"
+                style="@style/tolBtnCss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft ="@drawable/menu_btn_back"
+            	android:layout_weight="1"
+                android:text="回到首页" />
+
+            <com.profitles.framwork.cusviews.view.MyButton
+                android:id="@+id/btnReLogin"
+                style="@style/tolBtnCss"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft ="@drawable/menu_btn_back"
+            	android:layout_weight="1"
+                android:text="重新登录" />
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</RelativeLayout>

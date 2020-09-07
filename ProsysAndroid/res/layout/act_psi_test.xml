@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<com.profitles.framwork.cusviews.view.MyRelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="UnusedNamespace" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:screenOrientation="portrait" >
+
+                <com.profitles.framwork.cusviews.view.MyLinearLayout
+                    android:id="@+id/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isScrollContainer="true"
+                    android:orientation="vertical" >
+                </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

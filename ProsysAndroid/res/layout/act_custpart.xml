@@ -1,0 +1,94 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout 
+	xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top|left"
+        android:orientation="vertical" >
+		
+           <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+           <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_cust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户：" />		
+            <com.profitles.framwork.cusviews.view.MyEditText
+                 android:id="@+id/etx_cust"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text=""/>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+        
+        
+    	<com.profitles.framwork.cusviews.view.MyLinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+
+	        <com.profitles.framwork.cusviews.view.MyTextView
+	            android:id="@+id/txv_rftriqPart"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="零件：" />
+	      <com.profitles.framwork.cusviews.view.MyEditText
+                 android:id="@+id/etx_rftriqPart"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text=""/>
+	        
+    	</com.profitles.framwork.cusviews.view.MyLinearLayout>
+    	
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+              
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_cust_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户图号：" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_cust_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </com.profitles.framwork.cusviews.view.MyLinearLayout>
+		<com.profitles.framwork.cusviews.view.MyLinearLayout
+		    android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+		     <com.profitles.framwork.cusviews.view.MyTextView
+		        android:id="@+id/txv_part_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零件描述："/>
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_part_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+		</com.profitles.framwork.cusviews.view.MyLinearLayout>
+    	<com.profitles.framwork.cusviews.view.MyDataGrid
+    	    android:id="@+id/dtg_rftriqConsInfo"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    matt:attColKeys="XSCP_CUST,XSCM_SORT,XSCP_CUST_PART,XSCP_PART,XSPT_DESC,XSPT_REV,XSCP_USERID,XSCP_CRE_DATE,XSCP_USER2,XSCP_MOD_DATE"
+    	    matt:attColNames="客户,客户描述,客户图号,零件,零件描述,版本,创建人,创建日期,修改人,修改日期"
+    	    matt:attColWidths="110,600,150,150,600,100,150,200,150,200"
+    	    matt:attRowHeight="60"
+    	    matt:isShowSeq="true" >
+		  </com.profitles.framwork.cusviews.view.MyDataGrid>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

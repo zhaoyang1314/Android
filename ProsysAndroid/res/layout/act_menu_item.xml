@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:padding="8dip" >
+
+    <com.profitles.framwork.cusviews.view.MyImageView
+        android:id="@+id/imgMenuItem"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/txvMenuItem"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="center"  
+        android:textColor="#000"  
+        android:textSize="18sp" />
+    
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/txvMenuItemId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/txvMenuItemParentId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <com.profitles.framwork.cusviews.view.MyTextView
+        android:id="@+id/txvMenuItemTager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+
+			 
+   				<com.profitles.framwork.cusviews.view.MyDataGrid
+	   			    android:id="@+id/mdtg_chk"
+	   			    android:layout_width="match_parent"
+	   			    android:layout_height="match_parent"
+	   			    matt:attColKeys="QAT_SN,QAT_CHK_TIME,QAT_CSP_DATE,QAT_OP_SHIFT1,QAT_CSP_USER1,QAT_OP_PART,QAT_CUST_PART,QAT_EDITION,XSPT_DESC1,QAT_TYPE_NM,QAT_OUT_SLT,QAT_SIZE_SLT,QAT_JDG_SLT,QAT_SECD_RESULT,QAT_SLT_NM,QAT_CHK_USER1,QAT_SPACE,QAT_SCAN,QAT_NBR"
+	   			    matt:attColNames="SN码,检验完成时间,送检日期,班次,送检人,物料号,客户件号,版本号,物料描述,检测机型,外观结果,尺寸结果,判定结果,再次判定结果,结论,检验人,备注,序列码,送检单号"
+	   			    matt:attColWidths="200,300,300,150,250,250,250,150,1000,300,300,300,300,300,250,250,100,750,300"
+	   			    matt:isShowSeq="true"
+	   			    >
+   					</com.profitles.framwork.cusviews.view.MyDataGrid>  
+   				
+   		
+
+</RelativeLayout>

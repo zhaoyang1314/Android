@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProfitLES</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_receiving">ReceivingActivity</string>
+
+    <!-- begin by denny -->
+    <string name="txvLot">批次：</string>
+    <string name="txvCfm">确定</string>
+    <string name="txvScat">散量：</string>
+    <string name="txvBar">扫码:</string>
+    
+    <string name="txvActPk">实检</string>
+    <string name="txvBox">箱数：</string>
+    <string name="txvReq">需求：</string>
+    <string name="txvTotPk">已拣：</string>
+    <string name="txvFmBin">源储：</string>
+    <string name="txvToLoc">至仓：</string>
+    <string name="txvtoBin">至储：</string>
+    <string name="txvBoxQuery">周转箱查询</string>
+    <string name="txvTotReq">总需</string>
+    <string name="txvLocBin">仓储：</string>
+    <string name="txvNbr">单号：</string>
+    <string name="txvCap">负荷：</string>
+    <string name="txvVend">供方：</string>
+    <string name="txvQC">检验：</string>
+    <string name="txvAdv">建议</string>
+    <string name="txvAdvBox">荐箱：</string>
+    <string name="txvQoh">库存：</string>
+    <string name="txvLen">标识：</string>
+     <string name="txvColour">颜色：</string>
+    <string name="txvwjl">未拣量：</string>
+    <string name="txvPart">零件：</string>
+    <string name="txvVersion">版本：</string>
+    <string name="txvUnit">每箱：</string>
+    <string name="txvDetail">明细</string>
+    <string name="promptNbr">请输入单号</string>
+    <string name="promptBar">扫码不能为空</string>
+    <string name="txvAdBin">建议储位：</string>
+    <string name="txvLoc">库位：</string>
+     <string name="txvLkc">库存：</string>
+     <string name="txvPandian">盘点：</string>
+     <string name="txvType">类型：</string>
+     <string name="txvCust">客户：</string>
+     <string name="txvReqd">需求日期：</string>
+     <string name="txvEdtd">交货日期：</string>
+     <string name="txvPoNbr">采购单号：</string>
+     <string name="txvCnNbr">送货单号：</string>
+     <string name="txvStation">工位：</string>
+     <string name="txvAlertReason">报警原因：</string>
+     <string name="txvbusnumber">车牌号：</string>
+      <string name="txvName">描述：</string>
+      <string name="txvScan">托标签：</string>
+      <string name="txvunit">单位：</string>
+      <string name="txvCus">客户件号：</string>
+      <string name="txvnum">标签数量：</string>
+      <string name="txvbnum">已扫数量：</string>
+      <string name="txvBmodel">业务模式：</string>
+      <string name="txvqty">数量：</string>
+      <string name="txvreqty">库存量：</string>
+      <string name="txvCMScan">客签：</string> 
+      <string name="txvAllBox">本次已扫总箱：</string>
+      <string name="txvAllQty">本次已扫总量：</string>
+      <string name="txvPanDianNum">盘点单号：</string>
+      <string name="txvPanDianBin">盘点储位：</string>
+      <string name="txvBoxNbr">箱号：</string>
+	  <!-- by Gerry -->
+		<string name="txvAllDraw">总撤：</string>
+		<string name="txvAllPk">总拣：</string>
+		<string name="txvRhair">实发：</string>
+	
+      <string name="txvParentScan">父标签：</string>
+      <string name="txvSonScan">子标签：</string>
+
+      <string name="txvBoxQty">已扫箱数：</string>
+      <string name="txvWarehouse">车间库：</string>
+      <string name="txvOpinion">意见：</string>
+    <!-- end by denny -->
+    
+    
+    
+      <!-- by PSI -->
+		<string name="Preservation">保存</string>
+		<string name="OperatingEnvironment">运行环境：</string>
+		<string name="txvSeqScan">序列码：</string>
+    <!-- end by PSI -->
+    
+    
+    
+    
+
+    <string name="title_activity_shelve">ShelveActivity</string>
+    <string name="title_activity_up_bin">UpBinActivity</string>
+    <string name="title_activity_cnrc">CnrcActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_qcpick">QcpickActivity</string>
+    <string name="title_activity_pciss">PcissActivity</string>
+    <string name="title_activity_qcrtn">QcrtnActivity</string>
+    <string name="title_activity_tr">TrActivity</string>
+    <string name="title_activity_ppv">PpvActivity</string>
+    <string name="title_activity_demo">DemoActivity</string>
+    <string name="title_activity_xbox">XBoxActivity</string>
+	<string name="title_activity_pick">PickActivity</string>
+	<string name="title_activity_lap">LapActivity</string>
+	<string name="title_activity_send">SendActivity</string>
+	<string name="title_activity_reploc">ReplocActivity</string>
+	<string name="title_activity_rftriq">RftriqActivity</string>
+	<string name="title_activity_fj">FjActivity</string>
+	<string name="title_activity_jhwrk">JhwrkActivity</string>
+	<string name="title_activity_cnrt">CnRtActivity</string>
+	<string name="title_activity_jhwck">JhwckActivity</string>
+	<string name="title_activity_pkConfirm">pkConfirmActivity</string>
+	<string name="title_activity_inventory">InventoryActivity</string>
+	<string name="title_activity_loclp">LocLPActivity</string>
+	<string name="title_activity_porc">PorcActivity</string>
+	<string name="title_activity_fps">FpsActivity</string>
+	<string name="title_activity_socfm">SocfmActivity</string>
+	<string name="title_activity_demoeason">DemoEasonActivity</string>
+	<string name="title_activity_rece">RevhsActivity</string>
+	<string name="title_activity_rfl">RflhsActivity</string>
+	<string name="title_activity_qip">QipActivity</string>
+	<string name="title_activity_qib">QibActivity</string>
+	<string name="title_activity_px">PxActivity</string>
+	<string name="title_activity_plt">PltActivity</string>
+	<string name="title_activity_Rh">RhActivity</string>
+	<string name="title_activity_scanc">ScanCActivity</string>
+	<string name="title_activity_kbsc">KbscActivity</string>
+	<string name="title_activity_kbqr">KbqrActivity</string>
+	<string name="title_activity_aopen">AlertOpenActivity</string>
+	<string name="title_activity_aoff">AlertOffActivity</string>
+	<string name="title_activity_pftporc">PftporcActivity</string>
+	<string name="title_activity_Dr">DrActivity</string>
+	<string name="title_activity_Spell">SpellActivity</string>
+	<string name="title_activity_trl">TrLActivity</string>
+    <string name="title_activity_Pm">PmActivity</string>
+    <string name="title_activity_Pr">PrActivity</string>
+    <string name="title_activity_Ws">WsActivity</string>
+    <string name="title_activity_InventoryPQC">InventoryPQCActivity</string>
+    <string name="title_activity_rScanS">RScanSActivity</string>
+
+    <string name="title_activity_coFTheScan">CoFTheScanActivity</string>
+    <string name="title_activity_QtyIns">QtyInsActivity</string> 
+
+    <string name="title_activity_lastQc">LastQcActivity</string>
+    <string name="title_activity_wost">WostActivity</string>
+    <string name="title_activity_lastWg">LastWgActivity</string>
+    <string name="title_activity_wostQc">WostQcActivity</string> 
+    <string name="title_activity_pd">PdActivity</string> 
+    <string name="title_activity_woQcOk">WoQcOkActivity</string>
+    <string name="title_activity_woqcng">WoqcngActivity</string>
+    <string name="title_activity_locfps">LocFpsActivity</string>
+    <string name="title_activity_pxnew">NewPxActivity</string>
+
+    <string name="title_activity_rtnpo">RtnPoActivity</string>
+
+    <string name="title_activity_dis">DismantlingActivity</string>
+    <string name="title_activity_sortprint">SortPrintActivity</string>
+    <string name="title_activity_upstatus">UpStatusActivity</string>
+    <string name="title_activity_pdnew">PdNewActivity</string>
+    <!-- packing by brenna begin -->
+    <string name="title_activity_pk">PkActivity</string>
+    <string name="title_activity_pkupd">PkUpdActivity</string>
+    <string name="title_activity_UpBinPr">UpBinPrActivity</string>
+    <string name="title_activity_UpBinPrs">UpBinPrsActivity</string>
+    <string name="title_activity_rc">RcActivity</string>
+    <string name="title_activity_NewDis">NewDismantlingActivity</string>
+    <string name="title_activity_PdXj">PdXjActivity</string>
+    <string name="title_activity_Pster">PsterActivity</string>
+    <string name="title_activity_QuaIn">QuaInsActivity</string>
+    <string name="title_activity_Barld">BarLdActivity</string>
+    <string name="title_activity_FinshOP">FinshOPActivity</string>
+    <string name="title_activity_DrawPd">DrawPdfActivity</string>
+    <string name="title_activity_WoListView">WoListViewActivity</string>
+    <string name="title_activity_LineWoListView">LineWoListViewActivity</string>
+    <string name="title_activity_HandoverItem">HandoverItemActivity</string>
+    <string name="title_activity_Cpdx">CpdxActivity</string>
+    <string name="title_activity_PsiActivity">PsiActivity</string>
+    <string name="title_activity_CheckedInfo">CheckedInfoActivity</string>
+    <string name="title_activity_CheckingInfo">CheckingInfoActivity</string>
+    <string name="title_activity_SelfActivity">SelfActivity</string>
+    <string name="title_activity_PsiSelfActivity">PsiSelfActivity</string>
+    <string name="title_activity_SelfItemActivity">SelfItemActivity</string>
+    <string name="title_activity_SelfInsertActivity">SelfInsertActivity</string>
+    <string name="title_activity_BlockActivity">BlockActivity</string>
+    <string name="title_activity_DetermineActivity">DetermineActivity</string>
+    <string name="title_activity_PDFViewActivity">PDFViewActivity</string>
+    <string name="title_activity_IQCPDFViewActivity">IQCPDFViewActivity</string>
+    <string name="title_activity_CustPartSerActivity">CustPartSerActivity</string>
+      
+    <string name="txvTotAllot">总分配</string>
+    <string name="txvBin">储位:</string>
+    <string name="txvOrga">组织:</string>
+    <string name="txvLabel">标签量:</string>
+    <string name="txvQty">数量：</string>
+    <string name="txvLab">标签</string>
+    <string name="txvMultPk">分拣：</string>
+    <string name="txvSplit">拆分数：</string>
+    <string name="txvSurplus">剩余数：</string>
+    <string name="txvSplitBox">已拆数：</string>
+    <string name="txvGongWei">工位：</string>
+    <string name="txvPo">采购单号：</string>
+    <string name="txvPoLine">采购单行号：</string>
+    <string name="txvSend">送货：</string>
+    <string name="txvReceipts">实收：</string>
+    <string name="txvReason">原因：</string>
+    <string name="txvFz">发至：</string>
+    <string name="txvMb">目标：</string>
+    <string name="txvDate">日期：</string>
+    <string name="txvShift">班次：</string>
+    <!-- packing by brenna end -->
+    <string name="txvOkQty">合格：</string>
+    <string name="txvNgQty">不合格：</string>
+    <string name="txvRsvQty">留样：</string>
+    <string name="txvExpQty">实验：</string>
+    <string name="txvSn">扫SN：</string>
+    <string name="txvTRqty">退货量：</string>
+    <string name="txvRn">退货单号：</string>  
+     <string name="txvWanG">生产完工汇报</string>
+      <string name="txvOrRtnQty">已退货量：</string>
+      <string name="txvState">状态：</string>
+     <string name="txvReceQty">收货量：</string>
+     <string name="txvScanStatus">标签状态：</string>
+     <string name="txvIsNoScan">是否存在：</string> 
+    <!-- by hita -->
+    <string name="txvProList">工单:</string>
+    <string name="txvWIP">WIP库位:</string>
+    <string name="txvProqty">加工数量:</string>
+    <string name="txvckqty">检验数量:</string>
+
+    <string name="txvWkSh">车间:</string>
+    <string name="txvWkShift">产线:</string>
+    <string name="txvWkStage">工序:</string>  
+    <string name="CNbr">数量：</string>
+
+     <string name="txvCPart">客件：</string>
+     <string name="txvRtnQty">可退数：</string>
+     <string name="txvPlanQty">计划数:</string>
+     <string name="txvFishQty">完工数:</string>
+     <string name="txvWorkSpace">备注:</string>
+   <!--  <string name="txvckqty">检验数量：</string>-->
+    <!-- Marin -->
+    <string name="txvFinishedBarcode">完工扫码:</string>
+    <string name="txvWorkShop">车间:</string>
+    <string name="txvLine">产线:</string>
+   <string name="txvlastBox">末箱/件：</string> 
+
+  <!--  <string name="txvFinishedBarcode">完工扫码：</string>
+    <string name="txvWorkShop">车间：</string>
+    <string name="txvLine">产线：</string>
+    <string name="txvlastBox">末箱/件：</string> -->
+    <string name="plcz">批量操作</string> 
+    <string name="open">打开</string> 
+    <string name="close">关闭</string> 
+   <string name="txvSite">地点：</string>
+	<string name="txvNumLbl">箱号：</string>
+	<string name="txvRev">版本:</string>
+	<string name="txvAddr">组织：</string>
+	<string name="txvScanQty">标签量：</string>
+	<string name="txvBinQty">储位量：</string>
+	<string name="txvLocQtyAll">总库存：</string>
+	<string name="txvLocState">库状态：</string>
+	<string name="txvDrtn">标识：</string>
+	<string name="txvCrtUser">创建人：</string>
+	<string name="txvTime">时间：</string>
+	<string name="txvScanCode">码值：</string>
+	<string name="txvRef">参考：</string>
+	<string name="txvColor">颜色：</string>
+	<string name="txvTargetScan">目标标签：</string>
+	<string name="txvSourceScan">源标签：</string>
+	<string name="txvSplitNum">拆出数量：</string>
+</resources>

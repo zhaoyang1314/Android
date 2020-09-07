@@ -1,0 +1,128 @@
+<com.profitles.framwork.cusviews.view.MyRelativeLayout 
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp" >
+
+                <com.profitles.framwork.cusviews.view.MyTextView
+                    android:id="@+id/txv_sortNbr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txvNbr" />
+                <com.profitles.framwork.cusviews.view.MyEditText
+                     android:id="@+id/etx_sortNbr"
+                     android:layout_width="match_parent" 
+                     android:layout_height="wrap_content">
+                 </com.profitles.framwork.cusviews.view.MyEditText>
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+            
+             
+        </com.profitles.framwork.cusviews.view.MyLinearLayout> 
+        
+	 	<com.profitles.framwork.cusviews.view.MyTabHost
+	        android:id="@+id/tbl_sortAdv"
+	        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"  
+	        matt:attChildId="llt_sortso,llt_sortSrfd,llt_sortPkl"
+		    matt:attChildKey="GetSortSo,GetSortSrfd,GetSortPkl"
+		    matt:attChildName="发货信息,发货明细信息,分拣信息"> 
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	
+	            <TabWidget
+	                android:id="@android:id/tabs"
+	                android:layout_width="match_parent"
+	                android:layout_height="30dp">
+	            </TabWidget>
+	
+	            <FrameLayout
+	                android:id="@android:id/tabcontent"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent" >
+	
+					<LinearLayout
+	                    android:id="@+id/llt_sortso"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical"
+	                    android:padding="5dp"> 
+						<com.profitles.framwork.cusviews.view.MyDataGrid
+				            android:id="@+id/gdv_sortso"
+				            android:layout_width="match_parent"
+	                     	android:layout_height="wrap_content"
+							matt:attColKeys="RFSRF_NBR,RFSRF_CUST,RFSRF_CUST_NM,RFSRF_REQ_DATE,RFSRF_ETD,RFSRF_END_CUST"
+							matt:attColNames="单号,客户,客户描述,需求日期,抵达日期,最终客户"
+							matt:attColWidths="200,100,200,150,180,180,150,300,800,200,200,120"
+							matt:attRowHeight="60"
+							matt:isShowSeq="false">
+	       				</com.profitles.framwork.cusviews.view.MyDataGrid> 	  
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                   	android:id="@+id/llt_sortSrfd"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical"
+	                    android:padding="5dp" >
+	
+		                 <com.profitles.framwork.cusviews.view.MyDataGrid
+		                     android:id="@+id/gdv_sortSrfd"
+		                     android:layout_width="match_parent"
+		                     android:layout_height="match_parent"
+		                     matt:attColKeys="RFSRFD_LINE,RFSRFD_PART,PART_NAME,RFSRFD_QTY,ALLSHIP,RFSRFD_SO_NBR,RFSRFD_SO_LN,PART_UM"
+		                     matt:attColNames="行号,零件,零件描述,需求量,发货量,销售单号,销售行号,单位"
+		                     matt:attColWidths="80,240,400,200,100,100,130,100"
+		                     matt:attRowHeight="60"
+		                     matt:isShowSeq="false" >
+		       			</com.profitles.framwork.cusviews.view.MyDataGrid>
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:id="@+id/llt_sortPkl"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical"
+	                    android:padding="5dp"> 
+						<com.profitles.framwork.cusviews.view.MyDataGrid
+				            android:id="@+id/gdv_sortPkl"
+				            android:layout_width="match_parent"
+	                     	android:layout_height="wrap_content"
+							matt:attColKeys="RFPKL_NBR,RFPKLD_LINE,RFPKLD_PART,RF_SITE,RF_TO_LOC,RF_TO_BIN,RF_PK_QTY,RF_LOT,RF_QTY_MULT,RF_SCAN,PART_UM,RF_LINE"
+							matt:attColNames="分拣单号,行号,零件,地点,库位,储位,数量,批次,单包量,标签,单位,标识"
+							matt:attColWidths="150,100,240,130,150,150,100,150,200,800,200,120"
+							matt:attRowHeight="60"
+							matt:isShowSeq="false">
+	       				</com.profitles.framwork.cusviews.view.MyDataGrid> 	  
+	                </LinearLayout>
+	                
+	            </FrameLayout>
+	        </LinearLayout>
+	    </com.profitles.framwork.cusviews.view.MyTabHost>
+	    
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</com.profitles.framwork.cusviews.view.MyRelativeLayout>

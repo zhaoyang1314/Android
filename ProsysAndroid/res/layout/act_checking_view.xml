@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+
+			 
+   				<com.profitles.framwork.cusviews.view.MyDataGrid
+	   			    android:id="@+id/mdtg_chk1"
+	   			    android:layout_width="match_parent"
+	   			    android:layout_height="match_parent"
+	   			    matt:attColKeys="QAT_CSP_DATE,QAT_OP_SHIFT1,QAT_CSP_USER1,QAT_SN,QAT_OP_PART,QAT_CUST_PART,QAT_EDITION,XSPT_DESC1,QAT_SPACE,QAT_SCAN"
+	   			    matt:attColNames="送检日期,班次,送检人,SN,物料号,客户件号,版本号,物料描述,备注,序列码"
+	   			    matt:attColWidths="300,100,250,200,250,250,150,1000,150,750"
+	   			    matt:isShowSeq="true"
+	   			    >
+
+   					</com.profitles.framwork.cusviews.view.MyDataGrid>  
+   				
+   		
+
+</RelativeLayout>

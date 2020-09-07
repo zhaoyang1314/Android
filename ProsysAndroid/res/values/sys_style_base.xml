@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<style name="lltMainHead">
+        <item name="android:background">@drawable/sys_border_bottom</item>
+		<item name="android:paddingLeft">5dip</item>
+	</style>
+	
+	<style name="lltMainBody">
+        <item name="android:padding">10dp</item>
+	</style>
+	
+	<!-- Tool Button Css -->
+	<style name="lltToolCss">
+	    <item name="android:minHeight">15dp</item>
+		<item name="android:paddingTop">1dip</item>
+		<item name="android:background">@drawable/sys_tool_btn_top</item>
+	</style>
+	
+	<!-- Tool Button Css -->
+	<style name="tolBtnCss">
+		<item name="android:layout_marginRight">1dip</item>
+		<item name="android:paddingLeft">18dp</item>
+		<item name="android:paddingRight">18dp</item>
+		<item name="android:background">#fff</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+	
+	<!-- Menu Item Css -->
+	<style name="menuItemCss">
+		<item name="android:background">@drawable/sys_menu_item_bg</item>
+	</style>
+	
+	<!-- 单号 -->
+	<style name="sys_Nbr_Css">
+	</style>
+	
+	<!-- 源储 -->
+	<style name="sys_FBbin_Css">
+	</style>
+	
+	<!-- 至储 -->
+	<style name="sys_ToBin_Css">
+	</style>
+	
+	<!-- 仓储 -->
+	<style name="sys_LocBin_Css">
+	</style>
+	
+	<!-- 零件 -->
+	<style name="sys_Part_Css">
+	</style>
+	
+	<!-- 条码 -->
+	<style name="sys_Bar_Css">
+	</style>
+	
+	<!-- 供应商 -->
+	<style name="sys_Vend_Css">
+	</style>
+	
+	<!-- 批号 -->
+	<style name="sys_Lot_Css">
+	</style>
+	
+	<!-- 箱数 -->
+	<style name="sys_Box_Css">
+	</style>
+	
+	<!-- 散数 -->
+	<style name="sys_Scat_Css">
+	</style>
+	
+	<!-- 每箱 -->
+	<style name="sys_Unit_Css">
+	</style>
+	
+	<!-- 总数 -->
+	<style name="sys_Tot_Css">
+	</style>
+	<!-- 负荷 -->
+	<style name="sys_Cap_Css">
+	</style>
+</resources>

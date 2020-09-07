@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dip"
+    android:orientation="vertical" >
+
+   <com.profitles.framwork.cusviews.view.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_fcheck"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip"
+                android:singleLine="true"
+                android:text="待检"
+                android:background="#FFFF00"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1.5dip"
+                android:layout_height="fill_parent"
+                android:background="#B4B3B3" />
+
+            <TextView
+                android:id="@+id/text_ycheck"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip"
+                android:singleLine="true"
+                android:clickable="true"
+                android:text="已检"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1.5dip"
+                android:layout_height="fill_parent"
+                android:background="#B4B3B3" />
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#A7A5A5" />
+
+    <include
+        android:id="@+id/table_title"
+        layout="@layout/act_self_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#B4B3B3"
+            android:dividerHeight="1.0dip"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+        </ListView>
+    </HorizontalScrollView>
+</LinearLayout>

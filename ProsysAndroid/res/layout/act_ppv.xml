@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvBar" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ
+                android:id="@+id/ext_ppvBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvPart" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_ppvParts"
+                style="@style/TextFont"
+                android:ems="11"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/TextFont"
+            android:layout_height="25dp" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:layout_height="wrap_content"
+                android:text="描述：" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_ppvMs"
+                style="@style/TextFont"
+                android:ems="6" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:layout_height="40dp"
+                android:text="单位：" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_ppvDw"
+                style="@style/TextFont"
+                android:ems="4" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="供方：" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_ppvVend"
+                style="@style/TextFont"
+                android:ems="11"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvLot" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_ppvLot"
+                style="@style/TextFont"
+                android:ems="11"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="源容：" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvyContainer"
+                style="@style/TextFont"
+                android:ems="6"
+                android:text="" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvUnit" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvyUnit"
+                style="@style/TextFont"
+                android:ems="4"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/TextFont"
+            android:layout_height="60dp" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvBox" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvyBox"
+                style="@style/TextFont"
+                android:ems="6"
+                android:text="" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvScat" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvyScat"
+                style="@style/TextFont"
+                android:ems="4"
+                android:text="" />
+        </LinearLayout>
+
+        <com.profitles.framwork.cusviews.view.MyTextView
+            style="@style/TextFont"
+            android:text="转至容器：" />
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="至容：" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvzContainer"
+                style="@style/TextFont"
+                android:ems="6"
+                android:text="" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvUnit" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvzUnit"
+                style="@style/TextFont"
+                android:ems="4"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvBox" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvzBox"
+                style="@style/TextFont"
+                android:ems="6"
+                android:text="" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvScat" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/ext_ppvzScat"
+                style="@style/TextFont"
+                android:ems="4"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont">
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:text="拆分前：" />
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:text="拆分后：" />
+		</LinearLayout>
+		<LinearLayout style="@style/TextFont">
+            <com.profitles.framwork.cusviews.view.MyDataGrid
+                android:id="@+id/mdtg_Splitfront"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                matt:attColKeys="PART,MiaoShu,DanWei,txvVend,txvLot,yContainer,yUnit,yBox,yScat,Scan"
+                matt:attColNames="零件,描述,单位,供方,批次,源容,每箱,箱数,散量,条码"
+                matt:attColWidths="250,200,200,200,200,200,200,200,200,200,700"
+                matt:attRowHeight="60"
+                matt:isShowSeq="false" >
+            </com.profitles.framwork.cusviews.view.MyDataGrid>
+            
+            <com.profitles.framwork.cusviews.view.MyDataGrid
+                android:id="@+id/mdtg_Aftersplit"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                matt:attColKeys="PART,MiaoShu,DanWei,txvVend,txvLot,zContainer,zUnit,zBox,zScat"
+                matt:attColNames="零件,描述,单位,供方,批次,至容,每箱,箱数,散量"
+                matt:attColWidths="250,200,200,200,200,200,200,200,200,200"
+                matt:attRowHeight="60"
+                matt:isShowSeq="false" >
+            </com.profitles.framwork.cusviews.view.MyDataGrid>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

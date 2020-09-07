@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.profitles.framwork.cusviews.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 单号 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvNbr" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ
+                android:id="@+id/etx_FJNBR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                matt:isBlurRequired="true" >
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>
+        
+                <!-- 储位 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvLocBin" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ
+                android:id="@+id/etx_FJBIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                matt:isBlurRequired="true" >
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>
+
+        <!-- 零件 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvPart" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ
+                android:id="@+id/etx_FJPART"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                matt:isBlurRequired="true" >
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>
+
+        <!-- 零件描述,零件单位 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_FJDESC"
+                android:layout_height="35dp"
+                style="@style/TextFont"
+                android:ems="8"
+                android:text="" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_FJUM"
+                android:layout_height="35dp"
+                style="@style/TextFont"
+                android:ems="4"
+                android:text="" />
+        </LinearLayout>
+
+
+        <!-- 批次 -->
+        <com.profitles.framwork.cusviews.view.MyLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp" >
+
+                <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvLot" />
+ 
+                <com.profitles.framwork.cusviews.view.MySpinner
+                    android:id="@+id/spn_FJLOT"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content" />
+                <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvMb" />
+
+	            <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_FJMb"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="5"
+	                android:enabled="false" /> 
+            </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+        <!-- 需求,库存 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvReq" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJREQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="5"
+                android:enabled="false" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvQoh" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJQOH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="5"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- 箱数,每箱,散量,发至 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvTotPk" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJTOTFJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="5"
+                android:enabled="false" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvAdvBox" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJADVBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="5"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- 箱数,每箱,散量,发至 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvBox" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvUnit" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJUNIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="5"
+                android:enabled="false" />
+        </LinearLayout>
+        <!-- 散量,发至 -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvScat" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJSCAT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                style="@style/TextFont"
+                android:text="@string/txvFz" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_FJFZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5" />
+        </LinearLayout>
+        
+        <!-- Grid -->
+
+        <LinearLayout style="@style/TextFont" >
+
+            <com.profitles.framwork.cusviews.view.MyTabHost
+                android:id="@+id/tbl_pkAdv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+           		android:layout_marginLeft="10dp"
+                matt:attChildId="llt_pkTotReq,llt_pkAdv,llt_pkActPk"
+                matt:attChildKey="GetPkTotReq,GetPkAdv,GetPkActPk"
+                matt:attChildName="总需,建议,实拣" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="318dp"
+                        android:layout_height="30dp" >
+                    </TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/llt_pkTotReq"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp" >
+
+                            <com.profitles.framwork.cusviews.view.MyDataGrid
+                                android:id="@+id/gdv_pkTotReq"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                matt:attColKeys="RFPKLD_PART,RFPKLD_QTY_REQ,QTY_ACT,RFPKLD_QTY_MULT"
+                                matt:attColNames="零件,总需,已拣,总分"
+                                matt:attColWidths="300,150,150,150"
+                                matt:attRowHeight="60"
+                                matt:isShowSeq="false" >
+                            </com.profitles.framwork.cusviews.view.MyDataGrid>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llt_pkAdv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp" >
+
+                            <com.profitles.framwork.cusviews.view.MyDataGrid
+                                android:id="@+id/gdv_pkAdv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                matt:attColKeys="RFLAD_BIN,RFLAD_PART,RFLAD_LOT,RFLAD_QTY_LAD"
+                                matt:attColNames="储位,零件,批次,数量"
+                                matt:attColWidths="200,300,350,150"
+                                matt:attRowHeight="60"
+                                matt:isShowSeq="false" >
+                            </com.profitles.framwork.cusviews.view.MyDataGrid>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llt_pkActPk"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <com.profitles.framwork.cusviews.view.MyDataGrid
+                                android:id="@+id/gdv_pkActPk"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                matt:attColKeys="RF_BIN,RF_PART,RF_LOT,RF_QTY,RF_QTY_BOX,RF_QTY_SCAT,RF_SCAN"
+                                matt:attColNames="储位,零件,批次,数量,箱数,散件,标签"
+                                matt:attColWidths="200,300,350,150,150,150,1500"
+                                matt:attRowHeight="60"
+                                matt:isShowSeq="false" >
+                            </com.profitles.framwork.cusviews.view.MyDataGrid>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </com.profitles.framwork.cusviews.view.MyTabHost>
+        </LinearLayout>
+    </com.profitles.framwork.cusviews.view.MyLinearLayout>
+
+</RelativeLayout>

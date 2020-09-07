@@ -1,0 +1,421 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+<LinearLayout 
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginLeft="26dp"
+   android:layout_marginRight="26dp">
+   <LinearLayout
+	     style="@style/TextFont"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_marginTop="5dp" >
+    <Button
+	        android:id="@+id/buttonSpace"
+	     	android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnWorkSpc"
+	        android:textColor="#FFFFFF"
+	        android:textSize="12dp"
+	        />
+    <Button
+	        android:id="@+id/buttonPlan"
+	     	android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnWorkPlan"
+	        android:textColor="#FFFFFF"
+	        android:layout_marginLeft="20dp"
+	        android:textSize="12dp"/>
+    <Button
+	        android:id="@+id/buttonOnCheck"
+	     	android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnWorkOnCheck"
+	        android:textColor="#FFFFFF"
+	        android:layout_marginLeft="20dp"
+	        android:textSize="12dp"/>
+    <Button
+	        android:id="@+id/buttonOrdCheck"
+	     	android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnWorkOraCheck"
+	        android:textColor="#FFFFFF"
+	        android:layout_marginLeft="20dp"
+	        android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>  
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp">
+
+	 <LinearLayout
+	     style="@style/TextFont"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content" >
+
+              <com.profitles.framwork.cusviews.view.MyTextView
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/txvWkShift" />
+
+              <com.profitles.framwork.cusviews.view.MyEditText
+                  android:id="@+id/etx_shift"
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@null"
+                  android:ems="10"
+                  android:enabled="false"
+                  android:text="" />
+              <com.profitles.framwork.cusviews.view.MyTextView
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/txvWkStage" />
+
+              <com.profitles.framwork.cusviews.view.MySpinner
+                  android:id="@+id/ext_cofspinner"
+                  android:layout_width="100dp"
+                  android:layout_height="0dp"
+                  matt:isRequired="true" />
+
+       </LinearLayout>
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp">
+
+     <LinearLayout
+         style="@style/TextFont"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+
+         <com.profitles.framwork.cusviews.view.MyTextView
+             style="@style/TextFont"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/txvPart" />
+
+         <com.profitles.framwork.cusviews.view.MyEditText
+             android:id="@+id/etx_part"
+             style="@style/TextFont"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@null"
+             android:ems="10"
+             android:enabled="false"
+             android:text="" />
+
+         <com.profitles.framwork.cusviews.view.MyEditText
+             android:id="@+id/etx_partDesc"
+             style="@style/TextFont"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1.74"
+             android:background="@null"
+             android:ems="20"
+             android:enabled="false"
+             android:text="" />
+     </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="140dp" 
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp">
+
+    <LinearLayout
+	     style="@style/TextFont"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	      >
+
+              <com.profitles.framwork.cusviews.view.MyTextView
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/txvRev" />
+
+              <com.profitles.framwork.cusviews.view.MyEditText
+                  android:id="@+id/etx_Edtion"
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@null"
+                  android:ems="10"
+                  android:enabled="false"
+                  android:text="" />
+
+              <com.profitles.framwork.cusviews.view.MyTextView
+                  style="@style/TextFont"
+                  android:layout_height="wrap_content"
+                  android:text="@string/txvPlanQty"
+                  android:lineSpacingExtra="9dp" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+                  android:id="@+id/etx_planqty"
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:background="@null"
+                  android:ems="10"
+                  android:enabled="false" />
+               <com.profitles.framwork.cusviews.view.MyTextView
+                  style="@style/TextFont"
+                  android:layout_height="wrap_content"
+                  android:text="@string/txvFishQty"
+                  android:lineSpacingExtra="9dp" />
+               <com.profitles.framwork.cusviews.view.MyEditText
+                  android:id="@+id/etx_finqty"
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:background="@null"
+                  android:ems="10"
+                  android:enabled="false" />
+
+        </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="180dp" 
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp">
+
+    <com.profitles.framwork.cusviews.view.MyTextView
+        style="@style/TextFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvProList" />
+
+    <com.profitles.framwork.cusviews.view.MyEditText
+        android:id="@+id/etx_Wonbr"
+        style="@style/TextFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:enabled="false"
+        android:text="" />
+
+    <com.profitles.framwork.cusviews.view.MyTextView
+        style="@style/TextFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvCus" />
+
+    <com.profitles.framwork.cusviews.view.MyEditText
+        android:id="@+id/etx_Custpart"
+        style="@style/TextFont"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:enabled="false"
+        android:text="" />
+    
+     <com.profitles.framwork.cusviews.view.MyTextView
+        style="@style/TextFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txvDate" />
+
+    <com.profitles.framwork.cusviews.view.MyEditText
+        android:id="@+id/etx_WoDate"
+        style="@style/TextFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21"
+        android:background="@null"
+        android:ems="10"
+        android:enabled="false"
+        android:text="" />
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="220dp"
+    android:id="@+id/scanTable"
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp">
+     <LinearLayout
+	     style="@style/TextFont"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content" >
+        <com.profitles.framwork.cusviews.view.MyTextView
+          style="@style/TextFont"
+          android:layout_height="wrap_content"
+          android:text="@string/txvSeqScan"
+          android:lineSpacingExtra="9dp" />       
+
+       <com.profitles.framwork.cusviews.view.MyReadBQ
+           android:id="@+id/ext_scan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="4" >
+
+       </com.profitles.framwork.cusviews.view.MyReadBQ>
+     </LinearLayout>
+    
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="250dp"
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp" >
+     <LinearLayout 
+         style="@style/TextFont"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     >
+       <com.profitles.framwork.cusviews.view.MyTextView
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/txvqty" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+                  android:id="@+id/etx_scanQty"
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:ems="10"
+                  android:inputType="numberSigned"
+                  android:text="" />
+            <Button
+	        android:id="@+id/buttonShifiDuty"
+	        android:layout_width="100dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnCheckReport"
+	        android:textColor="#FFFFFF"
+	        android:textSize="12dp" 
+	        android:visibility="gone"
+	        android:layout_marginLeft="50dp"/>
+       <com.profitles.framwork.cusviews.view.MyTextView 
+          style="@style/TextFont"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SN:"
+          android:lineSpacingExtra="9dp" 
+          />  
+       <com.profitles.framwork.cusviews.view.MyEditText
+                  android:id="@+id/ext_sn"
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@null"
+                  android:ems="10"
+                  android:enabled="false"
+                  android:text="" />
+     </LinearLayout>  
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="280dp" 
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp">
+     <LinearLayout
+	     style="@style/TextFont"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     >
+       <com.profitles.framwork.cusviews.view.MyTextView 
+          style="@style/TextFont"
+          android:layout_height="wrap_content"
+          android:text="@string/txvWorkSpace"
+          android:lineSpacingExtra="9dp" 
+          />  
+       <com.profitles.framwork.cusviews.view.MyEditText
+                  android:id="@+id/ext_spaceSpinner"
+                  style="@style/TextFont"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@null"
+                  android:ems="10"
+                  android:enabled="false"
+                  android:text="" />
+        </LinearLayout>
+</LinearLayout>
+<LinearLayout 
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="310dp"
+   android:layout_marginLeft="26dp"
+   android:layout_marginRight="26dp" >
+   <LinearLayout
+	     style="@style/TextFont"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     >
+    <Button
+	        android:id="@+id/buttonFinsh"
+	        android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnWorkFinsh"
+	        android:textColor="#FFFFFF"
+	        android:textSize="12dp"
+	        />
+    <Button
+	        android:id="@+id/buttonDraw"
+	        android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnDraw"
+	        android:textColor="#FFFFFF"
+	        android:textSize="12dp"
+	        android:layout_marginLeft="20dp" />
+    <Button
+	        android:id="@+id/buttonCheckPlan"
+	        android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnCheckPlan"
+	        android:textColor="#FFFFFF"
+	        android:textSize="12dp"
+	        android:layout_marginLeft="20dp" />
+    <Button
+	        android:id="@+id/buttonInstruction"
+	        android:layout_width="180dp"
+	        android:layout_height="35dp"
+	        android:background="@drawable/login_btn"
+	        android:paddingTop="1dp"
+	        android:text="@string/btnInstr"
+	        android:textColor="#FFFFFF"
+	        android:textSize="12dp" 
+	        android:layout_marginLeft="20dp"/>
+    
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

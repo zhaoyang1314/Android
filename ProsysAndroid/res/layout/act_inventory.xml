@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvNbr"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/etx_IvtNbr"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+
+        </LinearLayout>
+        
+                 <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLocBin"
+                style="@style/TextFont" />
+
+             <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/etx_IvtLocBin"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvBar"
+                style="@style/TextFont" />
+
+             <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/etx_IvtBar"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout style="@style/TextFont"  >
+            
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvPart"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_IvtPart"
+                android:text=""
+                style="@style/TextFont" 
+                android:ems="11"/>
+
+        </LinearLayout>
+        
+         <LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_IvtDesc"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="10"
+	                android:enabled="false" /> 
+	                
+	        <com.profitles.framwork.cusviews.view.MyEditText
+	                android:id="@+id/etx_IvtUm"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:ems="4"
+	                android:enabled="false" />
+
+        </LinearLayout>
+        
+        <LinearLayout style="@style/TextFont"  >
+            
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvVend"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_IvtVend"
+                android:text=""
+                style="@style/TextFont" 
+                android:ems="11"/>
+
+        </LinearLayout>
+         
+        <LinearLayout style="@style/TextFont"  >
+            
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLot"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+              <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_IvtLot"
+                android:text=""
+                style="@style/TextFont" 
+                android:ems="11"/>
+
+        </LinearLayout>
+        
+        <LinearLayout style="@style/TextFont"  >	    
+     	      <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvPandian"
+                android:layout_height="50dp"
+                style="@style/TextFont" />
+     	    
+     	      <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_IvtPandian"
+                style="@style/TextFont" 
+                android:ems="5"/>
+     	      
+     	</LinearLayout> 
+         
+ 	    <LinearLayout
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="200dp" >
+
+   			<com.profitles.framwork.cusviews.view.MyDataGrid
+   			    android:id="@+id/mdtg_Ivt"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="138dp"
+   			    matt:attColKeys="XRICH_LINE,XRICH_SITE,XRICH_LOC,XRICH_BIN,XRICH_PART,XSPT_DESC1,XRICH_LOT,XRICH_REF,XRICH_BOX_ID,XRICH_VEND,XRICH_FRZ_QTY,XRICH_FIRST_QTY,XRICH_EXPIRE"
+   			    matt:attColNames="序号,地点,库位,储位,物料号,名称,批号,参考,箱,供应商,账存数,盘点数,有效期"
+   			    matt:attColWidths="100,150,150,150,200,200,250,200,100,200,150,150,200"
+   			    matt:attRowHeight="100"
+   			    matt:isShowSeq="false" >
+
+   			</com.profitles.framwork.cusviews.view.MyDataGrid>  
+   		</LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

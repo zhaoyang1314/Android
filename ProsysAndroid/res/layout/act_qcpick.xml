@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:matt="http://schemas.android.com/apk/res/com.profitles.activity"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvNbr"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyReadBQ
+                android:id="@+id/etx_qcpickNbr"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true" 
+                android:text=""
+                matt:isBlurRequired="true"
+                matt:isRequired="true"
+                matt:reqAltMsg="@string/promptNbr" >
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+
+        </LinearLayout>
+        
+
+        <LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLocBin" 
+                style="@style/TextFont"/>
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_qcpicktoBin"
+                style="@style/TextFont" 
+                android:ems="11"/>
+            
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvBar"
+                style="@style/TextFont" />
+            
+            <com.profitles.framwork.cusviews.view.MyReadBQ 
+	            android:id="@+id/etx_qcpickBar"
+	            android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.profitles.framwork.cusviews.view.MyReadBQ>
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvPart"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_qcpickParts"
+                android:ems="8"
+                style="@style/TextFont"/>
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_qcpickum"
+                style="@style/TextFont"/>
+        </LinearLayout>
+
+         <LinearLayout style="@style/TextFont" >
+
+             <com.profitles.framwork.cusviews.view.MyTextView
+                 android:id="@+id/txv_partdescnull"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_partdesc"
+                style="@style/TextFont" />
+
+         </LinearLayout>
+       <LinearLayout style="@style/TextFont"  >
+            
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvLot"
+                style="@style/TextFont" />
+
+              <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/ext_qcpickLot"
+                android:ems="10"
+                style="@style/TextFont" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont"  >
+              
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvQC"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/etx_qcpickQC"
+                android:ems="5"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvUnit"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/etx_qcpickUnit"
+                android:ems="5"
+                style="@style/TextFont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >
+            
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvBox"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_qcpickBox"
+                android:inputType="number"
+                android:ems="5"
+                style="@style/TextFont" />
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="可检:"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/etx_Kjl"
+                android:ems="5"
+                style="@style/TextFont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextFont" >  
+            <com.profitles.framwork.cusviews.view.MyTextView
+                android:text="@string/txvScat"
+                style="@style/TextFont" />
+
+            <com.profitles.framwork.cusviews.view.MyEditText
+                android:id="@+id/etx_qcpickScat"
+                android:inputType="numberDecimal"
+                android:ems="5"
+                style="@style/TextFont" />
+           <com.profitles.framwork.cusviews.view.MyTextView
+                android:id="@+id/txv_qcpicknums"
+                style="@style/TextFont" />
+            
+        </LinearLayout>
+
+   			<com.profitles.framwork.cusviews.view.MyDataGrid
+   			    android:id="@+id/mdtg_qcpick"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="235dp"
+   			    matt:attColKeys="XRIQD_PART,XRIQD_IQD_QTY,XRIQD_IQT_QTY,XRIQD_LOC,XRIQD_BIN,XRIQD_LOT"
+   			    matt:attColNames="零件,检验数,已检量,库位,储位,批次"
+   			    matt:attColWidths="250,200,200,230,230,400,200"
+   			    matt:attRowHeight="60"
+   			    matt:isShowSeq="false" >
+
+   			</com.profitles.framwork.cusviews.view.MyDataGrid>  
+    </LinearLayout>
+
+</RelativeLayout>
